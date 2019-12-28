@@ -1,3 +1,5 @@
+
+
 # User Register
 ###burava-alena
 ##1.Description of the page 
@@ -50,32 +52,31 @@ burava-alena	Register
 * The length is no more than 20 characters.
 
 
-buza-stanislav	Register
-diminscaia-natalia	Register
-dipon-yelena	Register
+galushkina-diana
+####Field About
+** https://app.pasv.us/user/register
+* the field is required 
+* should contain at least one any character any language
+* numbers of characters in the field - unlimited
+* users need to wright information about their experience, skills, hobbies 
+   
+golovko-irina	Register
+ilinets-jenny	Register
+##### Submit Button
 
-frediuk-olena
-####Field Password
-Consists of a combination of characters:
-* the field is required
-* any register
-* any language
-* any special characters
-* any digits (0 - 9)
-* the minimum password length is 5 characters and the maximum password length is 30 characters
+* This button allows to confirm and send the information entered by a user 
+  to gain actual registration in the system;
+* the button will become active only upon all the fields are filled out; 
+* the user will receive an e-mail confirming his/her registration in the system 
 
-
-
-####	Galushkina Diana
-** Description of the page: User Register Field ***About*** requirements:
-*https://app.pasv.us/user/register
-
-* This field has the name **About**  and the field is required .
-* Users need to wright information about their  experience, skills, hobbies 
-   also users can use their preferred language.
+##### My Goals
+* User has to write information about his/her student’s goals 
+in the IT field during the studying, as well as the goals 
+after the end of the course and global ones.
+* User can use his/her preferred language.
 * The field should contain at least one any character in any language.
 * Numbers of characters in the field - unlimited.
 
 
-golovko-irina	Register
-ilinets-jenny	Register
+
+

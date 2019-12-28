@@ -35,9 +35,6 @@ Contains the following information:
 *© 2019 eat(); sleep(); code(); repeat();
 
 
-
-
-
 burava-alena	Register
 ### Burdeina Tetiana
 ** Description of the page: User Registr Field ***First Name*** requirements:

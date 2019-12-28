@@ -92,3 +92,12 @@ ilinets-jenny	Register
   to gain actual registration in the system;
 * the button will become active only upon all the fields are filled out; 
 * the user will receive an e-mail confirming his/her registration in the system 
+
+
+##### My Goals
+* User has to write information about his/her student’s goals 
+in the IT field during the studying, as well as the goals 
+after the end of the course and global ones.
+* User can use his/her preferred language.
+* The field should contain at least one any character in any language.
+* Numbers of characters in the field - unlimited.

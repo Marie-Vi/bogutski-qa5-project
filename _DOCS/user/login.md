@@ -5,6 +5,7 @@ ___
 * User Login page https://app.pasv.us/user/login is displayed after user clicks "Login" button on the homepage.
 
 ### User Interface
+![](img/login_form.png)
 
 #### Header
 * Hyperlink __“Progress Monitor”__ returns to homepage app.pasv.us. 

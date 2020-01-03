@@ -133,69 +133,69 @@ _Admin's Permissions breakdown by Application and Activities:_
 
 ### Roles and permissions matrix
 
-|       ACTIVITY        |       |         |         |  ROLES  |       |        |       |       |
+|       **ACTIVITY**        |       |         |         |  **ROLES**  |       |        |       |       |
 |-----------------------|-------|---------|---------|---------|-------|--------|-------|-------|
 |                       | New   | Learner | Student | Teacher | Quiz  | Course | Flash | Admin |
-| //USER                |       |         |         |         |       |        |       |       |
-| auth                  | TRUE  | TRUE    | TRUE    | TRUE    | TRUE  | FALSE  | TRUE  | TRUE  |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
+| USER                |       |         |         |         |       |        |       |       |
+| auth                  | ✅  | ✅    | ✅    | ✅    | ✅  | ❌  | ✅  | ✅  |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
 | //COURSE              |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | TRUE    | TRUE    | FALSE | TRUE   | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| lesson\.create        | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | FALSE | TRUE  |
+| get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ✅   | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| lesson\.create        | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
 | //GROUP               |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| get                   | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| get                   | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
 | //LECTURE             |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| get                   | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ✅    | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| get                   | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
 | //HOMEWORK            |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| answer                | FALSE | FALSE   | TRUE    | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| review                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| answer                | ❌ | ❌   | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| review                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
 | //DIARY               |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | TRUE    | TRUE    | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ✅    | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
 | //QUIZ QUESTION GROUP |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
 | //QUIZ QUESTION       |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | TRUE  | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
 | //Quiz ANSWER GROUP   |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| create                | FALSE | TRUE    | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | TRUE  | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ✅    | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
 | //Quiz ANSWER         |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | TRUE  | FALSE  | FALSE | TRUE  |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
 | //FLASHCARD GROUP     |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | TRUE  | TRUE  |
+| get\.all              | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ✅  | ✅  |
 | //FLASHCARD TRAINING  |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | TRUE    | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | TRUE  | TRUE  |
+| get\.all              | ❌ | ✅    | ✅    | ❌   | ❌ | ✅   | ✅  | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ✅  | ✅  |

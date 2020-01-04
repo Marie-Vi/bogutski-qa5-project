@@ -1,4 +1,4 @@
-[<<< Back to Table of Contents](_DOCS/index.md)
+[<<< Back to Table of Contents](index.md)
 # Roles and permissions 
 
 ## Overview

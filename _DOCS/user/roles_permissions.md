@@ -1,3 +1,4 @@
+[<<< Back to Table of Contents](index.md)
 # Roles and permissions 
 
 ## Overview
@@ -43,10 +44,10 @@ This role enables user to create diary post, but editing after it has been publi
  
 ### 3. Student
 The participants of studying process should get the role **'student'**. \
-After a user is assigned with **'student'** role he/she gets access to the _Groups_ section.
-section in addition to all sections that were accessible for him/her with **'learner'** role.  
+After a user is assigned with **'student'** role, the user gets access to the _Groups_ section.
+section in addition to all sections that were accessible for the user with **'learner'** role.  
 The list of groups in _Groups_ section visible for particular user depends on groups 
-he has access to. \
+the user has access to. \
 Every group has specific Access Type, _Members_ and _Observers_ parameters. 
 If the group has **'student'** Access type, all users with **'student'** role do see it in the list. 
 If the group has _Member_ Access type, only students assigned as _Members_ to the group 
@@ -54,7 +55,7 @@ can see it in the list.\
 Every group has the following sections: _Description, Rating, Lectures, Quiz_. 
 All these sub-pages are visible for the user with **'student'** role who has access 
 to the correspondent group. Student account appears on a Rating page only in case 
-he is recorded as a member in Members parameter of a group.  \
+the user is recorded as a member in Members parameter of a group.  \
 User with **'student'** role gets access to _Homework_ part of a lecture page 
 _(route to lectures page: Group -> Lectures - > select the lecture)_. 
 
@@ -79,7 +80,7 @@ Any user assigned with the role **'quiz'** can access, edit,
 delete as well as create new quiz. However, users with the role **'quiz'** 
 cannot change or see their profile settings and info, have no access 
 to lectures, courses and any other project section except for _Quiz_ section and _homepage_. 
-The role **'quiz'** can be only assigned to a user by administrator, or assigned 
+The role **'quiz'** can be only assigned to the user by administrator, or assigned 
 manually by database administrator.
           
 _Permissions for **'quiz'** role:_
@@ -118,84 +119,84 @@ The **'admin'** role has all the permissions available. Administrators manually 
 user accounts and decides which roles they should receive. 
 
 _Admin's Permissions breakdown by Application and Activities:_
-* _User:_ auth, get.all, delete.any, update.any;
-* _Course:_ get.all, create, update.any, delete,any, lesson.create;
-* _Group:_ get.all, get, create, update.any, delete.any;
-* _Lecture:_ get.all, get, create, update.any, delete.any;
-* _Homework:_ get.all, answer, create, review;
-* _Diary:_ get.all, creat, update.any, delete.any;
-* _Quiz Questions group:_ get.all, create, update.any, delete.any;
-* _Quiz question:_ get.all, create, update.any, delete.any;
-* _Quiz Answer Group:_ get.all, create, update.any, delete.any;
-* _Quiz answer:_ get.all, create, update.any, delete.any;
-* _Flashcard group:_ get.all, create, update.any, delete.any;
-* _Flashcard Training:_ get.all, create, update.any, delete.any.
+* _User:_ 'auth', 'get.all', 'delete.any', 'update.any';
+* _Course:_ 'get.all', 'create', 'update.any', 'delete,any', 'lesson.create';
+* _Group:_ 'get.all', 'get', 'create', 'update.any', 'delete.any';
+* _Lecture:_ 'get.all', 'get', 'create', 'update.any', 'delete.any';
+* _Homework:_ 'get.all', 'answer', 'create', 'review';
+* _Diary:_ 'get.all', 'creat', 'update.any', 'delete.any';
+* _Quiz Questions group:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Quiz question:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Quiz Answer Group:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Quiz answer:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Flashcard group:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Flashcard Training:_ 'get.all', 'create', 'update.any', 'delete.any'.
 
 ### Roles and permissions matrix
 
-|       ACTIVITY        |       |         |         |  ROLES  |       |        |       |       |
+|       **ACTIVITY**        |       |         |         |  **ROLES**  |       |        |       |       |
 |-----------------------|-------|---------|---------|---------|-------|--------|-------|-------|
 |                       | New   | Learner | Student | Teacher | Quiz  | Course | Flash | Admin |
-| //USER                |       |         |         |         |       |        |       |       |
-| auth                  | TRUE  | TRUE    | TRUE    | TRUE    | TRUE  | FALSE  | TRUE  | TRUE  |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| //COURSE              |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | TRUE    | TRUE    | FALSE | TRUE   | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| lesson\.create        | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | FALSE | TRUE  |
-| //GROUP               |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| get                   | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| //LECTURE             |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| get                   | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| //HOMEWORK            |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| answer                | FALSE | FALSE   | TRUE    | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| review                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| //DIARY               |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | TRUE    | TRUE    | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| //QUIZ QUESTION GROUP |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | FALSE | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | FALSE | TRUE  |
-| //QUIZ QUESTION       |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | TRUE    | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | TRUE  | FALSE  | FALSE | TRUE  |
-| //Quiz ANSWER GROUP   |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| create                | FALSE | TRUE    | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | TRUE  | FALSE  | FALSE | TRUE  |
-| //Quiz ANSWER         |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | TRUE    | TRUE  | FALSE  | FALSE | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | TRUE  | FALSE  | FALSE | TRUE  |
-| //FLASHCARD GROUP     |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | TRUE  | TRUE  |
-| //FLASHCARD TRAINING  |       |         |         |         |       |        |       |       |
-| get\.all              | FALSE | TRUE    | TRUE    | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| create                | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| update\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | TRUE   | TRUE  | TRUE  |
-| delete\.any           | FALSE | FALSE   | FALSE   | FALSE   | FALSE | FALSE  | TRUE  | TRUE  |
+| **_USER_**                |       |         |         |         |       |        |       |       |
+| auth                  | ✅  | ✅    | ✅    | ✅    | ✅  | ❌  | ✅  | ✅  |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_COURSE_**              |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ✅   | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| lesson\.create        | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| **_GROUP_**               |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| get                   | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_LECTURE_**             |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| get                   | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_HOMEWORK_**            |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| answer                | ❌ | ❌   | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| review                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| **_DIARY_**               |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ✅    | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_QUIZ QUESTION GROUP_** |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_QUIZ QUESTION_**       |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
+| **_QUIZ ANSWER GROUP_**   |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ✅    | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
+| **_QUIZ ANSWER_**         |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
+| **_FLASHCARD GROUP_**     |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ✅  | ✅  |
+| **_FLASHCARD TRAINING_**  |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ✅    | ❌   | ❌ | ✅   | ✅  | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ✅  | ✅  |

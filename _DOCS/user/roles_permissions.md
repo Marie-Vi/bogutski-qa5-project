@@ -44,10 +44,10 @@ This role enables user to create diary post, but editing after it has been publi
  
 ### 3. Student
 The participants of studying process should get the role **'student'**. \
-After a user is assigned with **'student'** role he/she gets access to the _Groups_ section.
-section in addition to all sections that were accessible for him/her with **'learner'** role.  
+After a user is assigned with **'student'** role, the user gets access to the _Groups_ section.
+section in addition to all sections that were accessible for the user with **'learner'** role.  
 The list of groups in _Groups_ section visible for particular user depends on groups 
-he has access to. \
+the user has access to. \
 Every group has specific Access Type, _Members_ and _Observers_ parameters. 
 If the group has **'student'** Access type, all users with **'student'** role do see it in the list. 
 If the group has _Member_ Access type, only students assigned as _Members_ to the group 
@@ -55,7 +55,7 @@ can see it in the list.\
 Every group has the following sections: _Description, Rating, Lectures, Quiz_. 
 All these sub-pages are visible for the user with **'student'** role who has access 
 to the correspondent group. Student account appears on a Rating page only in case 
-he is recorded as a member in Members parameter of a group.  \
+the user is recorded as a member in Members parameter of a group.  \
 User with **'student'** role gets access to _Homework_ part of a lecture page 
 _(route to lectures page: Group -> Lectures - > select the lecture)_. 
 
@@ -80,7 +80,7 @@ Any user assigned with the role **'quiz'** can access, edit,
 delete as well as create new quiz. However, users with the role **'quiz'** 
 cannot change or see their profile settings and info, have no access 
 to lectures, courses and any other project section except for _Quiz_ section and _homepage_. 
-The role **'quiz'** can be only assigned to a user by administrator, or assigned 
+The role **'quiz'** can be only assigned to the user by administrator, or assigned 
 manually by database administrator.
           
 _Permissions for **'quiz'** role:_
@@ -137,12 +137,12 @@ _Admin's Permissions breakdown by Application and Activities:_
 |       **ACTIVITY**        |       |         |         |  **ROLES**  |       |        |       |       |
 |-----------------------|-------|---------|---------|---------|-------|--------|-------|-------|
 |                       | New   | Learner | Student | Teacher | Quiz  | Course | Flash | Admin |
-| **_USER**_                |       |         |         |         |       |        |       |       |
+| **_USER_**                |       |         |         |         |       |        |       |       |
 | auth                  | ✅  | ✅    | ✅    | ✅    | ✅  | ❌  | ✅  | ✅  |
 | get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
 | delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
 | update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
-| _**COURSE**_              |       |         |         |         |       |        |       |       |
+| **_COURSE_**              |       |         |         |         |       |        |       |       |
 | get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ✅   | ❌ | ✅  |
 | create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
 | update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
@@ -160,7 +160,7 @@ _Admin's Permissions breakdown by Application and Activities:_
 | create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
 | update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
 | delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
-| **_HOMEWORK**_            |       |         |         |         |       |        |       |       |
+| **_HOMEWORK_**            |       |         |         |         |       |        |       |       |
 | get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
 | answer                | ❌ | ❌   | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
 | create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
@@ -185,7 +185,7 @@ _Admin's Permissions breakdown by Application and Activities:_
 | create                | ❌ | ✅    | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
 | update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
 | delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
-| **_QUIZ ANSWER**_         |       |         |         |         |       |        |       |       |
+| **_QUIZ ANSWER_**         |       |         |         |         |       |        |       |       |
 | get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
 | create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
 | update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |

@@ -16,7 +16,4 @@ Markdown link: https://markdown-it.github.io/
 10 | line spacing - one empty line | to separate title from paragraph or to separate paragraphs from each other if needed |
 11 | a sentence with a new idea/concept/thought | start with a capital letter with period at the end of the sentence |
 12 | page title | "Course " page, "Groups " page |
-13 | spelling tips: | - dropdown; |
-.  |                | - User; |
-.  |                | - instead of he/she/his/her/him/ - they/their/them, etc; |
-.  |                | - email. |
+13 | spelling tips: | - dropdown; <br/> - User; <br/> - instead of he/she/his/her/him/ - they/their/them, etc; <br/> - email. |

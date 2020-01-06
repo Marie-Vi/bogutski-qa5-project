@@ -29,10 +29,10 @@ After clicking it dropdown list pops-up.
 There are 3 options:
 
 * **Profile:** this field is active but it does not redirect User anywhere.
-So they stay on the same page.
+So they stay on the same page;
 
 * **Settings:** this field redirects User to https://app.pasv.us/user/edit/
-Here they can edit their Profile.
+Here they can edit their Profile;
 
 * **Logout:** by clicking it User can log out.
 
@@ -59,15 +59,15 @@ Icon is available if User indicated link to the website during registration.
 
 Description is made for User in the role of student:
 
-* **Coin:** the numbers to the right of the coin indicate the User's progress.
+* **Coin:** the numbers to the right of the coin indicate the User's progress;
 
-* **Rank:** shows the level of User's development depending on the tasks (hereinafter, katas) being solved on Codewars.
+* **Rank:** shows the level of User's development depending on the tasks (hereinafter, katas) being solved on Codewars;
 
-* **Honor:** shows the number of points assigned to the User depending on the tasks performed on Codewars.
+* **Honor:** shows the number of points assigned to the User depending on the tasks performed on Codewars;
 
-* **Task Completed:** shows the number of tasks performed in Codewars (including repeating decisions).
+* **Task Completed:** shows the number of tasks performed in Codewars (including repeating decisions);
 
-* The **graph** shows the progress of the User depending on the Honor and the Completed task in time, expressed in days of the month.
+* the **graph** shows the progress of the User depending on the Honor and the Completed task in time, expressed in days of the month.
 
 #### 3. About
 * Field **About** shows information of User’s experience, skills, and hobbies.

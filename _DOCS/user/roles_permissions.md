@@ -22,7 +22,9 @@ This role created to protect the app from low-quality profiles.
 The purpose of this role is to impose restrictions onto new account before it has been validated.  
 
 In order to be assigned with the role **"new"** User has to register to url https://pasv.us/user/register. Upon registration they will receive role **"new"** by default.
-All required fields have to be filled out to create the account. After registration, User is getting assigned with **"new"** role.
+All required fields have to be filled out to create the account. 
+
+After registration, User is getting assigned with **"new"** role.
 The role **"new"** only allows Users to access and edit their profile information.  
 Viewing site materials is not allowed for this role.
 
@@ -41,18 +43,23 @@ Learners have access to all courses, included lectures, tests, cards, lecture no
 This role enables User to create diary post, but its editing is not permitted when it was published.
  
 #### 3. Student
-The participants of studying process should get the role **"student"**. \
-After User is assigned with **"student"** role, the User gets access to the _Groups_ section, in addition to all sections that were accessible for the User with **"learner"** role.  
+The participants of studying process should get the role **"student"**. 
+
+After User is assigned with **"student"** role, the User gets access to the _Groups_ section, in addition to all sections that were accessible for the User with **"learner"** role.
+  
 The list of groups in _Groups_ section visible for particular User depends on groups 
-the User has access to. \
+the User has access to. 
+
 Every group has specific Access Type, _Members_ and _Observers_ parameters. 
 If the group has **"student"** Access type, all Users with **"student"** role do see it in the list. 
 If the group has _Member_ Access type, only students assigned as _Members_ to the group 
-can see it in the list.\
+can see it in the list.
+
 Every group has the following sections: _Description, Rating, Lectures, Quiz_. 
 All these sub-pages are visible for the User with **"student"** role who has access 
 to the correspondent group. Student account appears on a Rating page only in case 
-the User is recorded as a member in Members parameter of a group.  \
+the User is recorded as a member in Members parameter of a group.  
+
 User with **"student"** role gets access to _Homework_ part of a lecture page 
 _(route to lectures page: Group -> Lectures - > select the lecture)_. 
 
@@ -77,6 +84,7 @@ Any User assigned with the role **"quiz"** can access, edit,
 delete as well as create new quiz. However, Users with the role **"quiz"** 
 cannot change or see their profile settings and info, have no access 
 to lectures, courses and any other project section except for _Quiz_ section and _homepage_. 
+
 The role **"quiz"** can be only assigned to the User by administrator, or assigned 
 manually by database administrator.
           
@@ -88,6 +96,7 @@ all permissions are granted. _(* See Permissions Matrix below)_
 #### 6. Course
 Users with the role **"course"** have access to the title 
 page (_Progress Monitor_) and the section _Courses_. 
+
 In the _Courses_ section, with the role **"course"**, 
 it is allowed to create new and edit the content 
 of available courses and lessons. Such Users can group courses by name and section,

@@ -1,7 +1,7 @@
 [<<< Back to Table of Contents](index.md)
 ## USER REGISTER
 
- #### 1.Overview: Description of the page
+ #### 1. Overview: Description of the page
    
 In order to access the system User should register by performing following steps:
 * Get to the **User Register** page by clicking the **Register** button located on the homepage. 
@@ -28,49 +28,36 @@ In order to access the system User should register by performing following steps
   **"User with this e-mail exists"**
 
 #### 2. User Interface
-##### 2.1 Header: 
+##### 2.1 Header 
 Contains **Progress Monitor** (hyperlinked to homepage), **Login** and **Register** buttons.
 
-##### 2.2 Body:
+##### 2.2 Body
 In the beginning of the form there is a following message displayed:
 **"Profiles with fictitious or dummy data will be deleted"** 
 
 User Register Form contains the following eight required fields and one Submit button: 
 
-1. **First Name** 
-* Only Latin letters and only one word (no spaces) will be accepted.
-* Numbers and special symbols (!@#$%^&*()_+=`~/\,.?><|) are not allowed.
-* It is allowed to use - and '.
-* The length is no more than 20 characters.
-* If new User starts entering their second name (middle name or their title etc.) as a second word, 
-  a warning message of **"Only letters please. Spaces and symbols are not allowed"** will appear.
-* "Example: Harry" will be displayed as a template at the bottom of this field.  
+**First Name** 
+* only Latin letters and only one word (no spaces) will be accepted;
+* it is allowed to use - and '.
 
-2. **Last Name**
-* Must be 20 characters or less; if User exceeds this limit, the following message in red will appear on the screen:
- **'Must be 20 characters or less'**.
-* Only letters and only one word (no spaces) will be accepted.
-* No symbols will be accepted.
-* It is allowed to use - and '.
-* If new User inputs anything but letters or starts entering their second name (middle name or their title etc.) 
-  as a second word, the following warning message in red will be displayed:
-  **"Only letters please. Spaces and symbols are not allowed"**.
-* 'Example: Potter' will be displayed as a template at the bottom of this field.   
+**Last Name**
+* only Latin letters and only one word (no spaces) will be accepted;
+* it is allowed to use - and '.   
 
-3. **Cell phone number**
-* Field format should comply with international standard:
-  17775551122 or 380653332244.
-* The field should contain **only digits** (0 - 9), no spaces.
-* Phone number starts with country code.
-* The length is 11-12 digits.
+**Cell phone number**
+* field format should comply with international standard: 17775551122 or 380653332244;
+* the field should contain only digits (0 - 9) without spaces;
+* phone number starts with country code;
+* the length of the entered data is not less than 11 and not more than 12 digits.
 
-4. **Email**
-* Email field has to have a valid registered email address.
-* User must be able to access the provided email in a domain.
-* After registration, User will receive an email with title **"[PASV] Verify your email address"** 
+**Email**
+* email field has to have a valid registered email address;
+* User must be able to access the provided email in a domain;
+* after registration, User will receive an email with title **"[PASV] Verify your email address"**; 
   and must follow instructions in the email to finish a confirmation process.
 
-5. **Password**
+**Password**
 Consists of a combination of characters:
 * any letter case;
 * any language;
@@ -78,19 +65,19 @@ Consists of a combination of characters:
 * any digits (0 - 9);
 * the password length is 5-30 characters.
 
-6. **About**
-* Should contain at least one character of any language.
-* Number of characters in this field is unlimited.
-* User will need to fill out information about their experience, skills or hobbies. 
+**About**
+* a User will need to fill out information about their experience, skills or hobbies;
+* should contain at least one character of any language;
+* number of characters in this field is unlimited.
    
-7. **My goals**
+**My goals**
 * User will fill out a short information about their expectations from this course, goals they want to achieve
-  upon completion of the course, as well as their overall professional goals in the field of IT.
-* User can use their preferred language.
-* The field should contain at least one any character of any language.
-* Number of characters in this field is unlimited.
+  upon completion of the course, as well as their overall professional goals in the field of IT;
+* User can use their preferred language;
+* the field should contain at least one any character of any language;
+* number of characters in this field is unlimited.
 
-8. **English level** (contains a dropdown menu)
+**English level** (contains a dropdown menu)
  This field is used to obtain information about the User's English proficiency level. The drop-down menu will offer the
  following nine options:
 * Zero

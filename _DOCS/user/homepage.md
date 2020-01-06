@@ -40,15 +40,15 @@ The page is **informational and analytical** in its nature. It allows User to go
 * The teaching principles and methods.
 * A progress monitor information by providing statistics of an individual student and a whole group studying progress.  
 
-* "Group work synergy" contains a short description of page "Groups" https://app.pasv.us/group. It has no link to this page, and it only shows a screenshot of this section.
+* "Group work synergy" contains a short description of page "Groups" https://app.pasv.us/group. It has no link to this page, and it only shows a screenshot of this section;
 
-* "Progress analysis" contains a short description of student progress chart situated at the page "Profile". It has no link to this page, and it only shows a screenshot of this chart.
+* "Progress analysis" contains a short description of student progress chart situated at the page "Profile". It has no link to this page, and it only shows a screenshot of this chart;
 
-* "Quizzes" contains a short description of training tests that students must pass after completing a lesson before commencing a new one. Description has no link to this page, and it only shows a screenshot of training tests.
+* "Quizzes" contains a short description of training tests that students must pass after completing a lesson before commencing a new one. Description has no link to this page, and it only shows a screenshot of training tests;
 
-* "Daily reports" contains a short description of page "Diary" https://app.pasv.us/diary. It has no link to this page, and it only shows a screenshot of this section.
+* "Daily reports" contains a short description of page "Diary" https://app.pasv.us/diary. It has no link to this page, and it only shows a screenshot of this section;
 
-* "Lectures" contains a short description of page "Diary" situated in section "Groups" https://app.pasv.us/group. Section "Groups" contains different groups allocated by topic under study. For each group there is a personal list of lectures. Description has no a link to this page, and it only shows screenshot of this section.
+* "Lectures" contains a short description of page "Diary" situated in section "Groups" https://app.pasv.us/group. Section "Groups" contains different groups allocated by topic under study. For each group there is a personal list of lectures. Description has no a link to this page, and it only shows screenshot of this section;
 
 * "Real-time tracking progress" contains a short description of the progress of each student in comparison with other students of the group. The page can be found at https://app.pasv.us/course/5c140b2b42f6ea23059cbe8f/report.
  Description has no link to this page, and it only shows a screenshot of this section.

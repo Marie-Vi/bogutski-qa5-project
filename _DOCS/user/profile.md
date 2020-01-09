@@ -3,65 +3,65 @@
 
 #### 1. Description of Profile page
 
-##### 1.1. Profile page is displayed after User clicks the **Login** button on homepage.
-Then User should be redirected to url: https://app.pasv.us/user/.
-Profile page is a display or a summary of User's account.
+##### 1.1. "Profile" page is displayed after the User clicks the **Login** button on homepage.
+Then the User should be redirected to URL: https://app.pasv.us/user/.
+Profile page is a display or a summary of the User's account.
 
 There is a Menu bar with 5 fields (hyperlinks):https://app.pasv.us.
-* **Progress Monitor:** after clicking it User goes to the homepage.
+* **Progress Monitor:** after clicking it the User goes to the homepage.
 
-* **Courses:** after clicking it User goes to https://app.pasv.us/course.
-Here User can find available for them list of courses.
+* **Courses:** after clicking it the User goes to https://app.pasv.us/course.
+Here, the User can find available for them list of courses.
 
-* **Cards:** after clicking it User goes to https://app.pasv.us/flash.
-Here User can find list of FlashCards.
+* **Cards:** after clicking it the User goes to https://app.pasv.us/flash.
+Here, the User can find list of FlashCards.
 
-* **Groups:** after clicking it User goes to https://app.pasv.us/group.
-Here User can find the list of all available lectures divided by topics.
+* **Groups:** after clicking it the User goes to https://app.pasv.us/group.
+Here, the User can find the list of all available lectures divided by topics.
 
-* **Diary:** after clicking it User goes to https://app.pasv.us/diary.
-On this page User can create their daily report and
+* **Diary:** after clicking it the User goes to https://app.pasv.us/diary.
+On this page the User can create their daily report and
 see daily reports of other members of group.
 
-##### 1.2. Profile page also contains a field (hyperlink) with User name.
+##### 1.2. "Profile" page also contains a field (hyperlink) with the User name.
 After clicking it dropdown list pops-up.
 
 There are 3 options:
 
-* **Profile:** this field is active but it does not redirect User anywhere.
-So they stay on the same page;
+* **Profile:** this field is active but it does not redirect the User anywhere.
+So, they stay on the same page;
 
-* **Settings:** this field redirects User to https://app.pasv.us/user/edit/
+* **Settings:** this field redirects the User to https://app.pasv.us/user/edit/
 Here they can edit their Profile;
 
-* **Logout:** by clicking it User can log out.
+* **Logout:** by clicking it the User can log out.
 
-##### 1.3. On Profile page User can also see small icons and labels. 
-Icon is available if User indicated link to the website during registration.
+##### 1.3. On "Profile" page the User can also see small icons and labels. 
+Icon is available if the User indicated link to the website during registration.
 
-* **Google Docs icon:** it redirects User to their Google Document.
+* **Google Docs icon:** it redirects the User to their Google Document.
 
-* **Facebook icon:** it redirects User to their Facebook account.
+* **Facebook icon:** it redirects the User to their Facebook account.
 
-* **LinkedIn icon:** it redirects User to their LinkedIn account.
+* **LinkedIn icon:** it redirects the User to their LinkedIn account.
 
-* **GitHub icon:** it redirects User to their GitHub account.
+* **GitHub icon:** it redirects the User to their GitHub account.
 
-* **Codewars icon:** it redirects User to their Codewars account.
+* **Codewars icon:** it redirects the User to their Codewars account.
 
-* **Slack icon:** it redirects User to their Slack account.
+* **Slack icon:** it redirects the User to their Slack account.
 
-* The label (for example **QA5**) shows the name of the group in which User is studying.
+* The label (for example, **QA5**) shows the name of the group in which the User is studying.
 
 * This label shows **User role**. It can be new, learner, student, teacher, admin etc.
 
 #### 2. Description of Codewars elements.
 
-Description is made for User in the role of student:
+Description is made for the User in the role of student:
 
 * **Coin:** the numbers to the right of the coin indicate the User's progress;
 
-* **Rank:** shows the level of User's development depending on the tasks (hereinafter, katas) being solved on Codewars;
+* **Rank:** shows the level of the User's development depending on the tasks (hereinafter, katas) being solved on Codewars;
 
 * **Honor:** shows the number of points assigned to the User depending on the tasks performed on Codewars;
 
@@ -70,19 +70,19 @@ Description is made for User in the role of student:
 * the **graph** shows the progress of the User depending on the Honor and the Completed task in time, expressed in days of the month.
 
 #### 3. About
-* Field **About** shows information of User’s experience, skills, and hobbies.
+* Field **About** shows information of the User’s experience, skills, and hobbies.
 Information can appear in the User’s preferred language.
 * Text area is required.
 * The default state is zero character and the placeholder is "I'm … ".
 
 #### 4. Goals
-* User is asked to tell about their goals in programming and career. 
+* The User is asked to tell about their goals in programming and career. 
 * Text area is required.
 * The default state is zero character and the placeholder is "1… 2… 3… ".
 
 #### 5. Completed challenges
 ##### 5.1. Purpose of the field:
-* **Completed Challenges** is a profile page field which main idea is to show a list of User's completed tasks in Codewars.
+* **Completed Challenges** is a profile page field which main idea is to show a list of the User's completed tasks in Codewars.
 
 ##### 5.2. Button Update list:
 * It refreshes the list of solved katas.
@@ -107,18 +107,18 @@ Information can appear in the User’s preferred language.
 ##### 6.1. Description of Daily reports:
 
 * One of the obligatory parts for Student role is creating **Daily reports**.
-* After Daily report was created by User (using **Create day report** button on https://app.pasv.us/user/),
-it appears on the list of all User’s Daily reports.
+* After Daily report was created by the User (using **Create day report** button on https://app.pasv.us/user/),
+it appears on the list of all Users' Daily reports.
 * Label Daily reports is located on the top of Daily reports section.
-* To the right from Daily report there is a label icon with quantity of Daily reports current User has created.
+* To the right from Daily report there is a label icon with quantity of Daily reports created by the current User.
 
 ##### 6.2. Structure:
 
 * New Daily reports are added to the top of the list of previous reports.
 * Each Daily report in the list has a line that shows the date of creation (Month, Day, Year and Time).
-* Under the date labels with titles of checkbox fields that User chose while creating Daily report are displayed.
+* Under the date labels with titles of checkbox fields that the User chose while creating Daily report are displayed.
 Then actual text of Daily report is shown.
-* There is Like icon that shows how many likes this report has (from other Users). User can Like his own report.
-* User’s report can be approved by Admin or other person with the same privilege.
+* There is Like icon that shows how many likes this report has (from other Users). The User can **Like** his own report.
+* The User’s report can be approved by Admin or other person with the same privilege.
 
 [<<< Back to Table of Contents](index.md)

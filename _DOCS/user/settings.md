@@ -4,7 +4,7 @@
 **URL:** https://app.pasv.us/user/edit/(student_ID)
 
 #### Introduction (General description)
-The page "Settings" allows User to change their personal information including first and last name,
+The page "Settings" allows the User to change their personal information including first and last name,
 cell phone number, "About" information, update their personal goals, English level,
 links to social media pages and other information.
 
@@ -13,27 +13,27 @@ The User should be redirected to "Edit profile" page.
 
 #### HEADER
  Header is displaying the Navigation bar:
-* Clicking the **Progress monitor** link gets redirected User to the Homepage.
-* Clicking the **Courses** link gets redirected User  to the "Courses" page.
-* Clicking the **Cards** link gets redirected User  to the "FlashCards" page.
-* Clicking the **Groups** link gets redirected User  to the "Groups"  page.
-* Clicking the **Diary** link gets redirected User  to the  "Daily reports" page.
+* Clicking the **Progress monitor** link gets redirected the User to the Homepage.
+* Clicking the **Courses** link gets redirected the User  to the "Courses" page.
+* Clicking the **Cards** link gets redirected the User  to the "FlashCards" page.
+* Clicking the **Groups** link gets redirected the User  to the "Groups"  page.
+* Clicking the **Diary** link gets redirected the User  to the  "Daily reports" page.
 * Clicking the User's account name opens the dropdown menu:
-* Selecting "Profile" option in the dropdown gets redirected User  to the "Daily reports" page with personal achievements.
-* Selecting "Setting" option in the dropdown gets redirected User back to the "Setting" page.
-* Selecting "Logout" option in the dropdown gets log out from apps and redirects User to the "User Login" page.
+* Selecting "Profile" option in the dropdown gets redirected the User  to the "Daily reports" page with personal achievements.
+* Selecting "Setting" option in the dropdown gets redirected the User back to the "Setting" page.
+* Selecting "Logout" option in the dropdown gets log out from apps and redirects the User to the "User Login" page.
 
 #### BODY
 All text fields are not required but preferred.
 ##### First Name
 In this field the User can change their First name.
 Use only English letters. Spaces and symbols are not allowed, except for a single use of the hyphen "-" and apostrophe "'". Must be 20 characters or less.
-The User sees a warning if the input does not match the requirements.
+A warning pops up for the User if the input does not match the requirements.
 
 ##### Last Name
 In this field the User can change his Last name.
 Use only English letters. Spaces and symbols are not allowed, except for a single use of the hyphen "-" and apostrophe "'". Must be 20 characters or less.
-The User sees a warning if the input does not match the requirements.
+A warning pops up for the User if the input does not match the requirements.
 
 ##### Email confirmed
 Email field must contain only Latin characters (any case) and consists of: account name, @ sign, full domain name.
@@ -67,15 +67,15 @@ Go to FB, click your avatar in the right top corner, copy and paste the link her
 Go to your GitHub profile, copy and paste link into the corresponding text field.
 ##### Codewars link
 The User can write link to their Codewars profile (It is not a required field).
-* Once User clicks "Add Codewars link" button pop-up menu appears.
-* Pop-up menu should help User to understand where they can take URL to profile.
-* Pop-up menu should have an empty field, User should paste their link in the field. 
+* Once the User clicks "Add Codewars link" button pop-up menu appears.
+* Pop-up menu should help the User to understand where they can take URL to profile.
+* Pop-up menu should have an empty field, the User should paste their link in the field. 
 
 ##### T-Shirt size
-* User should be able to choose T-Shirt size from the dropdown menu.
+* The User should be able to choose T-Shirt size from the dropdown menu.
  
 ##### Delivery address
-* User can write their postal address (It is not a required field).
+* The User can write their postal address (It is not a required field).
 * Any characters can be used.
 * Only administrators can see the address.
 

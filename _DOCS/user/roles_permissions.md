@@ -1,54 +1,75 @@
-# Roles and permissions 
-## Overview
-Every role contains specific set of permissions. 
-If a user is assigned with several roles, all permissions 
-will be summed up.
+[<<< Back to Table of Contents](index.md)
+## ROLES AND PERMISSIONS 
+
+#### Overview
+Every role contains specific set of permissions defined for the whole system. 
+If the User is assigned with several roles, all permissions will be summed up.
+All roles (except for the **"admin"** role) can be changed and assigned only by the User with **"admin"** role.
  
-List of available roles:
+##### List of available roles:
 * "new"
 * "learner"
 * "student"
 * "teacher"
 * "course"
 * "quiz"
+* "flash"
 * "admin"
 
-### 1. New 
+#### 1. New 
 Initial role after registration. 
-This role Created to protect the app from low-quality profiles.
-  * The main task: 
-Is in getting account on [https://pasv.us]
-to identify a person,to give an access to allowed options. 
-  * Steps to create a “new” role:
-User have to register on [https://pasv.us/user/register] , and will receive "new" role by default.
-All required fields have to be filled to create the account 
-After registration, user getting assigned with "new" role.
-The ‘new’ role only allows user to edit a person's profile. 
+This role created to protect the app from low-quality profiles.
+The purpose of this role is to impose restrictions onto new account before it has been validated.  
+
+In order to be assigned with the role **"new"** the User has to register to URL https://pasv.us/user/register. Upon registration they will receive role **"new"** by default.
+All required fields have to be filled out to create the account. 
+
+After registration, the User is getting assigned with **"new"** role.
+The role **"new"** only allows the Users to access and edit their profile information.  
 Viewing site materials is not allowed for this role.
-After registration, the user receives an email address (confirmation by email).
-“new” role can be upgraded to “learner” role only with “admin”.
 
+After registration, the User receives confirmation by email.  
+The role **"new"** can be upgraded to **"learner"** role only with **"admin"**.
 
-### 2. Learner: 
- * course: get all ,  
- * lectures: get all, 
- * diary: create  
- * quiz: get, create answer, 
- * flash: get, create training
+#### 2. Learner
+ The role **"learner"** has restricted permissions and rights:
+  * course: get all ,  
+  * lectures: get all, 
+  * diary: create, 
+  * quiz: get, create answer, 
+  * flash: get, create training
+  
+Learners have access to all courses, included lectures, tests, cards, lecture notes, and quizzes.
+This role enables the User to create diary post, but its editing is not permitted when it was published.
  
-### 3. Student: 
- * course: get all,  
- * lectures: get all, 
- * homework: get all,
- * diary: create  
- * quiz:get, create answer, 
- * flash: get, create training
+#### 3. Student
+The participants of studying process should get the role **"student"**. 
 
-### 4. Teacher: 
-        (have rights: [auth, get all users, get all groups,  lecture (create, update, get), homework(get, create, update), get all diary, quiz(get, create, update, answer)  ]:
- The role **‘teacher’** can get  all users  in Courses, Groups and their  progress. 
- Also, **‘teacher’** can see all Daily reports in Dairy. 
-  This role can get, create, update Lectures, Homeworks and Quizzes.
+After the User is assigned with **"student"** role, the User gets access to the _Groups_ section, in addition to all sections that were accessible for the User with **"learner"** role.
+  
+The list of groups in _Groups_ section visible for the particular User depends on groups 
+the User has access to. 
+
+Every group has specific Access Type, _Members_ and _Observers_ parameters. 
+If the group has **"student"** Access type, all Users with **"student"** role do see it in the list. 
+If the group has _Member_ Access type, only students assigned as _Members_ to the group 
+can see it in the list.
+
+Every group has the following sections: _Description, Rating, Lectures, Quiz_. 
+All these sub-pages are visible for the User with **"student"** role who has access 
+to the correspondent group. Student account appears on a Rating page only in case 
+the User is recorded as a member in Members parameter of a group.  
+
+The User with **"student"** role gets access to _Homework_ part of a lecture page 
+_(route to lectures page: Group -> Lectures - > select the lecture)_. 
+
+
+#### 4. Teacher
+ The role **"teacher"** can access the Users' list in Courses, Groups and their progress. 
+ Also, **"teacher"** can see all Daily reports in Dairy. 
+ This role can access, create, update _Lectures_, _Homeworks_ and _Quizzes_.
+ 
+ _Permissions for **"teacher"** role:_
  * Auth
  * Get all users
  * Courses: get all courses
@@ -58,52 +79,132 @@ After registration, the user receives an email address (confirmation by email).
  * Diary: get all
  * Quiz: create, update, get, answer
 
-
-### 5. Quiz: 
-Any user assigned with the role **‘quiz’** can access, edit, 
-delete as well as create new quiz. However, users with the role **‘quiz’** 
+#### 5. Quiz
+Any User assigned with the role **"quiz"** can access, edit, 
+delete as well as create new quiz. However, Users with the role **"quiz"** 
 cannot change or see their profile settings and info, have no access 
 to lectures, courses and any other project section except for _Quiz_ section and _homepage_. 
-The role **‘quiz’** can be only assigned to a user by administrator, or assigned 
+
+The role **"quiz"** can be only assigned to the User by administrator, or assigned 
 manually by database administrator.
           
-ACL for **‘quiz’** role:
+_Permissions for **"quiz"** role:_
 * _User:_ auth;
 * _Quiz question, - answer, - question group, - answer group:_ 
-all permissions are granted. (* See Permissions Matrix below)
+all permissions are granted. _(* See Permissions Matrix below)_
 
-### 6. Course:
-        
-### 7. Flash: 
+#### 6. Course
+Users with the role **"course"** have access to the title 
+page (_Progress Monitor_) and the section _Courses_. 
 
-### 8. Admin 
-The Admin role has all the permissions available.
-Admin's Permissions breakdown by Application and Activities:
+In the _Courses_ section, with the role **"course"**, 
+it is allowed to create new and edit the content 
+of available courses and lessons. Such Users can group courses by name and section,
+embed lecture videos and add links to additional 
+resources that can help to learn more on given topic. It is 
+also possible to track student's progress and update it.
 
-* User: auth, get.all, delete.any, update.any;
-* Course: get.all, create, update.any, delete,any, lesson.create;
-* Group: get.all, get, create, update.any, delete.any;
-* Lecture: get.all, get, create, update.any, delete.any;
-* Homework: get.all, answer, create, review;
-* Diary: get.all, creat, update.any, delete.any;
-* Quiz Questions group: get.all, create, update.any, delete.any;
-* Quiz question: get.all, create, update.any, delete.any;
-* Quiz Answer Group: get.all, create, update.any, delete.any;
-* Quiz answer: get.all, create, update.any, delete.any;
-* Flashcard group: get.all, create, update.any, delete.any;
-* Flashcard Training: get.all, create, update.any, delete.any.
+_Permissions:_ ["course.get.all", "course.create", "course.update.any", "lesson.create"]
 
-stozhka-iryna
-strik-anna
-sulaiman-shaiakhmedov
-tkachenko-lyudmyla
-troyeglazov-sergey
-uruskiy-ivan
-vorobey-roman
-volkov-vadim
-yulia-liashenko
-sakilov-leonid
-beylina-polina
+#### 7. Flash
+Users assigned with the role **"flash"** can access, create and edit _flash cards_, 
+but unable to delete them. Such Users can not change or see their _profile settings and info_.
+They have no access to lectures, courses and any other project sections except 
+for _flash cards_ section. 
 
+The role **"flash"** can be only assigned to the User by another User with **"admin"** role, or assigned 
+manually by database administrator. 
 
+_Available actions for the Users with the role **"flash"**:_
+* _Flash:_ 'refresh' 
+* _Flash:_ 'create new card' => have two fields 'questions' & 'answers'
+* _Flash:_ 'training'
 
+#### 8. Admin 
+The **"admin"** role has all the permissions available. Administrators manually check new 
+Users' accounts and decide which roles they should receive. 
+
+_Admin's Permissions breakdown by Application and Activities:_
+* _User:_ 'auth', 'get.all', 'delete.any', 'update.any';
+* _Course:_ 'get.all', 'create', 'update.any', 'delete,any', 'lesson.create';
+* _Group:_ 'get.all', 'get', 'create', 'update.any', 'delete.any';
+* _Lecture:_ 'get.all', 'get', 'create', 'update.any', 'delete.any';
+* _Homework:_ 'get.all', 'answer', 'create', 'review';
+* _Diary:_ 'get.all', 'creat', 'update.any', 'delete.any';
+* _Quiz Questions group:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Quiz question:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Quiz Answer Group:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Quiz answer:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Flashcard group:_ 'get.all', 'create', 'update.any', 'delete.any';
+* _Flashcard Training:_ 'get.all', 'create', 'update.any', 'delete.any'.
+
+#### Roles and permissions matrix
+
+|       **ACTIVITY**        |       |         |         |  **ROLES**  |       |        |       |       |
+|-----------------------|-------|---------|---------|---------|-------|--------|-------|-------|
+|                       | New   | Learner | Student | Teacher | Quiz  | Course | Flash | Admin |
+| **_USER_**                |       |         |         |         |       |        |       |       |
+| auth                  | ✅  | ✅    | ✅    | ✅    | ✅  | ❌  | ✅  | ✅  |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_COURSE_**              |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ✅   | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| lesson\.create        | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ❌ | ✅  |
+| **_GROUP_**               |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| get                   | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_LECTURE_**             |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| get                   | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_HOMEWORK_**            |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| answer                | ❌ | ❌   | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| review                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| **_DIARY_**               |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ✅    | ✅    | ❌   | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_QUIZ QUESTION GROUP_** |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ❌ | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ❌ | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ❌ | ✅  |
+| **_QUIZ QUESTION_**       |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ✅    | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
+| **_QUIZ ANSWER GROUP_**   |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ✅    | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
+| **_QUIZ ANSWER_**         |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| create                | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ✅    | ✅  | ❌  | ❌ | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ✅  | ❌  | ❌ | ✅  |
+| **_FLASHCARD GROUP_**     |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ✅  | ✅  |
+| **_FLASHCARD TRAINING_**  |       |         |         |         |       |        |       |       |
+| get\.all              | ❌ | ✅    | ✅    | ❌   | ❌ | ✅   | ✅  | ✅  |
+| create                | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| update\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ✅   | ✅  | ✅  |
+| delete\.any           | ❌ | ❌   | ❌   | ❌   | ❌ | ❌  | ✅  | ✅  |
+
+[<<< Back to Table of Contents](index.md)

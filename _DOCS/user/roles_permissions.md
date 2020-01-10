@@ -3,7 +3,7 @@
 
 #### Overview
 Every role contains specific set of permissions defined for the whole system. 
-If User is assigned with several roles, all permissions will be summed up.
+If the User is assigned with several roles, all permissions will be summed up.
 All roles (except for the **"admin"** role) can be changed and assigned only by the User with **"admin"** role.
  
 ##### List of available roles:
@@ -21,14 +21,14 @@ Initial role after registration.
 This role created to protect the app from low-quality profiles.
 The purpose of this role is to impose restrictions onto new account before it has been validated.  
 
-In order to be assigned with the role **"new"** User has to register to url https://pasv.us/user/register. Upon registration they will receive role **"new"** by default.
+In order to be assigned with the role **"new"** the User has to register to URL https://pasv.us/user/register. Upon registration they will receive role **"new"** by default.
 All required fields have to be filled out to create the account. 
 
-After registration, User is getting assigned with **"new"** role.
-The role **"new"** only allows Users to access and edit their profile information.  
+After registration, the User is getting assigned with **"new"** role.
+The role **"new"** only allows the Users to access and edit their profile information.  
 Viewing site materials is not allowed for this role.
 
-After registration, User receives confirmation by email.  
+After registration, the User receives confirmation by email.  
 The role **"new"** can be upgraded to **"learner"** role only with **"admin"**.
 
 #### 2. Learner
@@ -40,14 +40,14 @@ The role **"new"** can be upgraded to **"learner"** role only with **"admin"**.
   * flash: get, create training
   
 Learners have access to all courses, included lectures, tests, cards, lecture notes, and quizzes.
-This role enables User to create diary post, but its editing is not permitted when it was published.
+This role enables the User to create diary post, but its editing is not permitted when it was published.
  
 #### 3. Student
 The participants of studying process should get the role **"student"**. 
 
-After User is assigned with **"student"** role, the User gets access to the _Groups_ section, in addition to all sections that were accessible for the User with **"learner"** role.
+After the User is assigned with **"student"** role, the User gets access to the _Groups_ section, in addition to all sections that were accessible for the User with **"learner"** role.
   
-The list of groups in _Groups_ section visible for particular User depends on groups 
+The list of groups in _Groups_ section visible for the particular User depends on groups 
 the User has access to. 
 
 Every group has specific Access Type, _Members_ and _Observers_ parameters. 
@@ -60,12 +60,12 @@ All these sub-pages are visible for the User with **"student"** role who has acc
 to the correspondent group. Student account appears on a Rating page only in case 
 the User is recorded as a member in Members parameter of a group.  
 
-User with **"student"** role gets access to _Homework_ part of a lecture page 
+The User with **"student"** role gets access to _Homework_ part of a lecture page 
 _(route to lectures page: Group -> Lectures - > select the lecture)_. 
 
 
 #### 4. Teacher
- The role **"teacher"** can access Users list in Courses, Groups and their progress. 
+ The role **"teacher"** can access the Users' list in Courses, Groups and their progress. 
  Also, **"teacher"** can see all Daily reports in Dairy. 
  This role can access, create, update _Lectures_, _Homeworks_ and _Quizzes_.
  
@@ -122,7 +122,7 @@ _Available actions for the Users with the role **"flash"**:_
 
 #### 8. Admin 
 The **"admin"** role has all the permissions available. Administrators manually check new 
-User accounts and decide which roles they should receive. 
+Users' accounts and decide which roles they should receive. 
 
 _Admin's Permissions breakdown by Application and Activities:_
 * _User:_ 'auth', 'get.all', 'delete.any', 'update.any';

@@ -1,86 +1,89 @@
-pe-liudmila	Settings
-sardari-aya	Settings
-semenovich-vladimir	Settings
+[<<< Back to Table of Contents](index.md)
+## SETTINGS DOCUMENTATION
 
-seryakov-andrey	Settings
+**URL:** https://app.pasv.us/user/edit/(student_ID)
 
-#### Email field requirements
+#### Introduction (General description)
+The page "Settings" allows the User to change their personal information including first and last name,
+cell phone number, "About" information, update their personal goals, English level,
+links to social media pages and other information.
 
-• Email consists of: account name, @ sign, full domain name
+The registration page is displayed after the User clicks **Settings** in the dropdown menu under their name on the Homepage.
+The User should be redirected to "Edit profile" page.
 
-• the field must contain only Latin characters (any case)
+#### HEADER
+ Header is displaying the Navigation bar:
+* Clicking the **Progress monitor** link gets redirected the User to the Homepage.
+* Clicking the **Courses** link gets redirected the User  to the "Courses" page.
+* Clicking the **Cards** link gets redirected the User  to the "FlashCards" page.
+* Clicking the **Groups** link gets redirected the User  to the "Groups"  page.
+* Clicking the **Diary** link gets redirected the User  to the  "Daily reports" page.
+* Clicking the User's account name opens the dropdown menu:
+* Selecting "Profile" option in the dropdown gets redirected the User  to the "Daily reports" page with personal achievements.
+* Selecting "Setting" option in the dropdown gets redirected the User back to the "Setting" page.
+* Selecting "Logout" option in the dropdown gets log out from apps and redirects the User to the "User Login" page.
 
-• without using spaces
+#### BODY
+All text fields are not required but preferred.
+##### First Name
+In this field the User can change their First name.
+Use only English letters. Spaces and symbols are not allowed, except for a single use of the hyphen "-" and apostrophe "'". Must be 20 characters or less.
+A warning pops up for the User if the input does not match the requirements.
 
-• can contain digits (0-9)
+##### Last Name
+In this field the User can change his Last name.
+Use only English letters. Spaces and symbols are not allowed, except for a single use of the hyphen "-" and apostrophe "'". Must be 20 characters or less.
+A warning pops up for the User if the input does not match the requirements.
 
-• may contain the following characters ._-+ 
+##### Email confirmed
+Email field must contain only Latin characters (any case) and consists of: account name, @ sign, full domain name.
 
-• without the use of next special characters !@#$%^&*()_+=`~/\,.?><|
+##### Cell phone number
+* field format should comply with international standard: 17775551122 or 380653332244;
+* the field should contain only digits (0 - 9) without spaces;
+* phone number starts with country code;
+* the length of the entered data is not less than 11 and not more than 12 digits.
 
-• the allowed length of the account name (up to the @ sign) must not exceed 63 characters
+##### About
+The User can change information about themselves, their experience, hobby. Any language can be used.
 
-• the allowed length of the domain name (after @) must not exceed 63 characters
+##### Goals
+The User can change their Goals by writing information about their goals in programming, career. Any language can be used.
 
-• in the domain part of the Email, the dot and dash symbol ( . - ) can be used multiple times 
-(to separate levels of the domain)
-
-• if you enter information incorrectly, the field is highlighted in red
-
-• for a field that meets all the conditions, the frame becomes green, and a green check mark
- appears on the right
-
-sharygin-aleksei	Settings
-shchekina-olga	Settings
-silchuk-nazariy	Settings
-skliarova-ekaterina	Settings
-smoljaninov-pavel	Settings
-#### Introduction (General description) - Liudmila Pe
-The page "Settings" allows the user to change their personal information including first and last names, 
-cell phone number, "about" information, update their personal goals, English level, 
-links to social media pages and other information. 
-Registration page is displayed after the user clicks “Settings” in the dropdown menu under their name on the Homepage.
- The user should be redirected to “Edit profile” page, url: https://app.pasv.us/user/edit/...
- 
-#### Header/Footer -  Aygul Sardari
-Setting Page always displays Header and Footer.  
- * Header is displayed Navigator bar:
-Clickin on the” Progress monitor”  gets redirected user  to the Home Page.
-Clicking on the “Courses” gets redirected user  to the “Courses” Page.
-Clicking on the “Cards” gets redirected user  to the “FleshCards” Page.
-Clicking on the “Groups” gets redirected user  to the “Groups”  Page.
-Clicking on the “Diary” gets redirected user  to the  “Daily reports” Page.
-Clicking on the Application name opens the drop down menu: 
-Selecting “Profile” option in the dropdown gets redirected user  to the “Daily reports” Page with personal achievements. 
-Selecting “Setting” option in the dropdown gets redirected back to the “Setting” Page. 
-Selecting “Logout” option in the dropdown gets log out from apps and redirected user  to the “User Login” Page. 
- * Footer is displayed two lines according to spec requirements.
-First line is Version: {version}”, {version} = current version (verify with devs that version is up-to-date)
-Second line (current year, JavaScript style’s slogan): © 2019 eat(); sleep(); code(); repeat();
-
-#### First Name/Last Name - Vladimir Semenovich
-#### Email confirmed  -  Andrey Seryakov
-#### Cell phone number - Aleksei Sharygin
-
-Cell phone number is a required field. Field has a validator:
-   * Phone number should start from country code. 
-   * Phone number length should be 11-13 numbers. 
-   * Only numbers can be used.
-   * If user used wrong symbols or wrote the wrong number of symbols application should show the message to help user understand the problem.
-
-#### About/Goals/English level - Olga Shchekina
-# ABOUT
-About is a required field.
-The user should write information about himself, his experience, hobby. Any language can be used. 
-
-# MY GOALS
-My Goals  is a required field.
-The user should write information about his goals in programming, career. Any language can be used. 
-
-# ENGLISH LEVEL
-User must select one of the English language levels from the pop-up menu: 
+##### English level
+The User can change their English language level by selecting  one of options from the dropdown menu:
 Zero, Beginner, Elementary, Pre-intermediate, Intermediate, Upper-intermediate, Advanced, Proficient, Native.
+##### Social media links
+The User can provide links to his Google doc resume, LinkedIn profile, Facebook page and Github profile. 
+##### Google Doc resume link
+Go to your Google doc resume, click "Share" button, choose "view to all", copy the link and paste it into the corresponding text field.
+##### LinkedIn profile link
+Go to your LinkedIn profile, copy and paste the link into the corresponding text field. 
+##### Facebook profile link
+In this field, the User can insert a link to his Facebook account:  
+Go to FB, click your avatar in the right top corner, copy and paste the link here.
 
-#### Google Doc resume link/LinkedIn profile link/
-#### Facebook profile link/GitHub profile link - Nazariy Silchuk
-#### T-shirt size/Delivery address - Pavel S.
+##### GitHub profile link
+Go to your GitHub profile, copy and paste link into the corresponding text field.
+##### Codewars link
+The User can write link to their Codewars profile (It is not a required field).
+* Once the User clicks "Add Codewars link" button pop-up menu appears.
+* Pop-up menu should help the User to understand where they can take URL to profile.
+* Pop-up menu should have an empty field, the User should paste their link in the field. 
+
+##### T-Shirt size
+* The User should be able to choose T-Shirt size from the dropdown menu.
+ 
+##### Delivery address
+* The User can write their postal address (It is not a required field).
+* Any characters can be used.
+* Only administrators can see the address.
+
+
+[<<< Back to Table of Contents](index.md)
+
+
+
+
+
+

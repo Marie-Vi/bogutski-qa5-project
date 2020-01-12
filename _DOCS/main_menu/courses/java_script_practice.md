@@ -3,6 +3,15 @@
 **Register**
 
 
+#### VIDEO 
+* Some lessons include short video tutorials on the topic. 
+* If a lesson contains a video, the user will see a special “video icon” in the lesson title. 
+* Video tutorials are hosted on Viktor Bogutskii’s [Youtube Channel](https://www.youtube.com/channel/UC_qoM-WzRMMG5H177WMbhlw), so they have all Youtube video functionality and Youtube Video Player is used to play the video.
+* The user simply needs to press the ‘play’ button to start watching a video.
+* Video is responsive and will be simply adjusted to different screen sizes. 
+* Users can watch a video in its default window or use the ‘Full Screen’ option from the video player. 
+* Users can see a video on the lesson page or watch it directly on Youtube. 
+
 
 
 

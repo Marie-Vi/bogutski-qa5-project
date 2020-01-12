@@ -1,4 +1,56 @@
 # JavaScript Practice
+**Page title:** JAVASCRIPT PRACTICE
+
+**URL:** https://app.pasv.us/course/5d1cbf67086fc30038bf1859
+
+This page is intended to access JavaScript Practice Course.
+
+**Requirements To Access:**
+1) Must be a registered users
+2) User`s role must be student
+3) User must be finished with JavaScript Syntax Course
+
+A purpose of this course is to gain more knowledge about JavaScript. In this course of JavaScript Practice you will
+ learn about functions, string methods, array methods, number methods, and objects. 
+ 
+#### Header
+ 
+| No. | Buttons with anchor hyperlink| Result|     
+| ------ | ----------- | -------|
+| 1 | Progress Monitor |Refreshes the page| 
+| 2 | Courses |It takes User to a list of available courses: https://app.pasv.us/course.|
+| 3 | Cards |It takes User to the section of Cards: https://app.pasv.us/flash.| 
+| 4 | Groups  |It takes User to Groups they belong to: https://app.pasv.us/group.|
+| 5 | Diary |It takes User to a list of other Users’ diaries and creation their own diary: https://app.pasv.us/diary.|
+| 6 | User’s first and last name |By clicking the button with the User’s first and last name, the User has access to their **Profile, Settings, and Logout**.|
+
+#### Body
+This course contains a numbered list with each subject.
+##### Symbol and Definitions
+
+
+| No | Icons | Description 
+| ------ | ----------- | -------|
+|1| ![](img/opened.PNG)| Symbol will indicate next available lesson
+|2| ![](img/video.PNG) | Symbol will indicate if section has a video.
+|3| ![](img/kata.PNG)| Symbol will indicate if any CodeWars tasks need to be completed before moving to a next section. There might be more than one symbol per section.
+|4| ![](img/check_mark.PNG)| Symbol appear once section has been completed
+|5| ![](img/lock.PNG)| Symbol will indicate that section can not begin, due to previous section not being complete
+|6| ![](img/pause1.PNG)![](img/pause2.PNG)| Symbol will only show up if section has been paused by an Admin
+ 
+ Each subject contains an un-number list of subject sections.
+ 
+ *** Work in progress ****
+
+
+
+
+
+
+
+
+
+
 
 
 #### Overview of main page and lesson page

@@ -1,6 +1,51 @@
 # JavaScript Practice
 
-**Register**
+
+#### Overview of main page and lesson page
+
+JavaScript Practice course contains 8 sections: 
+
+1. Section 1: Введение
+2. Section 2: Основные конструкции JavaScript
+3. Section 3: Методы работы с числами
+4. Section 4: Массивы
+5. Section 5: Тип данных Строка
+6. Section 6: Тип данных Объект
+7. Section 7: Работа с функциями
+8. Section 8: Class   
+
+Each section contains different number of lessons. Every lesson in the section is a 
+link, which will redirect the user to the main page of the lesson, where the user 
+can read theoretical material, watch video tutorial, find other links related to 
+this topic. On the right side of the lesson's name user can find some quantity 
+of images of video and Codewars. It will give the user info how many coding 
+challenges(katas) the user needs to solve in this lesson and does this lesson has 
+video tutorial.  
+Before passing lessons every lesson has status ‘closed’.  
+
+Every lesson has header, body, footer.  
+Body of the lesson page always contains: 
+- link to the JavaScript Course and the name of a section;
+- a heading;
+- a summary; 
+- a quiz.  
+
+Body of the lesson page can contains:
+- link to the video tutorial;
+- list of coding challenges - links to the Codewars katas.   
+
+The user cannot go to the next lesson without solving given katas and passing 
+the quiz.  
+The user cannot go to the next section without passing all lessons from previous 
+sections.   
+After solving a quiz and codding challenges, button “I understood everything…..” 
+will appear on the page under the lesson heading. After clicking on this button 
+label “Lesson completed successfully. Go to the list of lecture” will appear on the 
+lesson page under the heading, where ‘Go to the list of lecture’ is a link to the 
+main page of JavaScript Practice course.  
+After successfully completed lesson on the left side of the lesson's name 
+on the main page of JavaScript Practice course image ____ will appear with tooltip "passed"
+And next lesson will have status ‘Opened’.
 
 
 #### VIDEO 

@@ -1,6 +1,103 @@
 # JavaScript Practice
+**Page title:** JAVASCRIPT PRACTICE
 
-**Register**
+**URL:** https://app.pasv.us/course/5d1cbf67086fc30038bf1859
+
+This page is intended to access JavaScript Practice Course.
+
+**Requirements To Access:**
+1) Must be a registered users
+2) User`s role must be student
+3) User must be finished with JavaScript Syntax Course
+
+A purpose of this course is to gain more knowledge about JavaScript. In this course of JavaScript Practice you will
+ learn about functions, string methods, array methods, number methods, and objects. 
+ 
+#### Header
+ 
+| No. | Buttons with anchor hyperlink| Result|     
+| ------ | ----------- | -------|
+| 1 | Progress Monitor |Refreshes the page| 
+| 2 | Courses |It takes User to a list of available courses: https://app.pasv.us/course.|
+| 3 | Cards |It takes User to the section of Cards: https://app.pasv.us/flash.| 
+| 4 | Groups  |It takes User to Groups they belong to: https://app.pasv.us/group.|
+| 5 | Diary |It takes User to a list of other Users’ diaries and creation their own diary: https://app.pasv.us/diary.|
+| 6 | User’s first and last name |By clicking the button with the User’s first and last name, the User has access to their **Profile, Settings, and Logout**.|
+
+#### Body
+This course contains a numbered list with each subject.
+##### Symbol and Definitions
+
+
+| No | Icons | Description 
+| ------ | ----------- | -------|
+|1| ![](img/opened.PNG)| Symbol will indicate next available lesson
+|2| ![](img/video.PNG) | Symbol will indicate if section has a video.
+|3| ![](img/kata.PNG)| Symbol will indicate if any CodeWars tasks need to be completed before moving to a next section. There might be more than one symbol per section.
+|4| ![](img/check_mark.PNG)| Symbol appear once section has been completed
+|5| ![](img/lock.PNG)| Symbol will indicate that section can not begin, due to previous section not being complete
+|6| ![](img/pause1.PNG)![](img/pause2.PNG)| Symbol will only show up if section has been paused by an Admin
+ 
+ Each subject contains an un-number list of subject sections.
+ 
+ *** Work in progress ****
+
+
+
+
+
+
+
+
+
+
+
+
+#### Overview of main page and lesson page
+
+JavaScript Practice course contains 8 sections: 
+
+1. Section 1: Введение
+2. Section 2: Основные конструкции JavaScript
+3. Section 3: Методы работы с числами
+4. Section 4: Массивы
+5. Section 5: Тип данных Строка
+6. Section 6: Тип данных Объект
+7. Section 7: Работа с функциями
+8. Section 8: Class   
+
+Each section contains different number of lessons. Every lesson in the section is a 
+link, which will redirect the user to the main page of the lesson, where the user 
+can read theoretical material, watch video tutorial, find other links related to 
+this topic. On the right side of the lesson's name user can find some quantity 
+of images of video and Codewars. It will give the user info how many coding 
+challenges(katas) the user needs to solve in this lesson and does this lesson has 
+video tutorial.  
+Before passing lessons every lesson has status ‘closed’.  
+
+Every lesson has header, body, footer.  
+Body of the lesson page always contains: 
+- link to the JavaScript Course and the name of a section;
+- a heading;
+- a summary; 
+- a quiz.  
+
+Body of the lesson page can contains:
+- link to the video tutorial;
+- list of coding challenges - links to the Codewars katas.   
+
+The user cannot go to the next lesson without solving given katas and passing 
+the quiz.  
+The user cannot go to the next section without passing all lessons from previous 
+sections.   
+After solving a quiz and codding challenges, button “I understood everything…..” 
+will appear on the page under the lesson heading. After clicking on this button 
+label “Lesson completed successfully. Go to the list of lecture” will appear on the 
+lesson page under the heading, where ‘Go to the list of lecture’ is a link to the 
+main page of JavaScript Practice course.  
+After successfully completed lesson on the left side of the lesson's name 
+on the main page of JavaScript Practice course image ____ will appear with tooltip "passed"
+And next lesson will have status ‘Opened’.
 
 
 #### VIDEO 

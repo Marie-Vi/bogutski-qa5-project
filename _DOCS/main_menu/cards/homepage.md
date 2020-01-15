@@ -15,3 +15,4 @@ Authorized Users can create Flash Groups. The form contains:
 **Create** - button.
 When flash group is already created, name and description can also be edited only by authorized Users.
 When clicking flash group Name the User is redirected to https://app.pasv.us/flash/group/(group_ID).
+Each group has its own ID.

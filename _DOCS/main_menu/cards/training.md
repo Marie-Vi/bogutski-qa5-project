@@ -3,19 +3,19 @@
 #### 1. Overview
 
 Training allows User to assess their knowledge on particular topic using [_Cards_](homepage.md)
-In order to start _Cards Training_ User should follow steps:
+In order to start _Cards Training_ User should perform following steps:
 
-* Press the button with anchor hyperlink [_Cards_](https://app.pasv.us/flash)
-* User will be redirected to the _FlashCards_ page where User should click on particular topic (_Card Group_)
+* Click on [_Cards_](https://app.pasv.us/flash) hyperlink at _Progress Monitor_ header
+* After being redirected to _FlashCards_ page (for logged-in users only) User can chose the topic of interest and click on it  (_Card Group_)
 * User will be redirected to the page with view options which include _Training_
-* Press on the button with anchor hyperlink _Training_
-* Press on the button **"Start training"**.
+* Click on the hyperlink _Training_
+* Click on **"Start training"**.
 
 #### 2. Training process 
 
 ![](img/training1.png)
 
-After User starts _Training_ following elements appear on screen:
+When _Training_ is in progress following elements can be seen on screen:
 
 |       **Name**        |         **Description**        | 
 |------------|-------------------|
@@ -28,7 +28,7 @@ After User starts _Training_ following elements appear on screen:
 
 #### 3. Training rules
 
-* User can't start new _Training_ with the same _Card Group_ until finishes _Training_ in progress
+* User can't start new _Training_ with the same _Card Group_ if there is a _Training_ in progress
 * When _Training_ is finished successfully, **“Start training”** button appears again.
 
 

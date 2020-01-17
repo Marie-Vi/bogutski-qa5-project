@@ -18,3 +18,6 @@ When clicking flash group Name the User is redirected to https://app.pasv.us/fla
 Each group has its own ID.
 The User can see four options: 
 **Main view**
+**Compact view**
+**Waiting for approval**
+**Training**

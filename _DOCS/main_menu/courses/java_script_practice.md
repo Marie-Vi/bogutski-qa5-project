@@ -208,4 +208,15 @@ And next lesson will have status ‘Opened’.
     only when the user gets all the questions right and receives the green box of ***Congratulations!...*** messages 
     on her screen with a ***Continue button***
    
-    
+   
+   
+#### Codewars Challenges 
+   It is created for the user to gain more practice.   
+   * To go to the next lesson, you must pass all the challenges:The user will see this notification line.  
+   * The links that are listed below will take the user to the www.codewars.com 
+     Links - to tasks with the specified level of difficulty (kyu), name of the kata and  the status (Not passed)
+   * After solving the problem, you need to click Update status button, the problem status changes from (Not passed) to (Passed). 
+   * When all the problems are solved user receives a message on top of the kata links:  
+     Congratulations! You solved all coding challenges in this lesson. User can move on to the next lesson.
+     
+

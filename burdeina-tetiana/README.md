@@ -1,1 +1,1 @@
-# Burdeina Tetianak
+# Burdeina Tetiana

@@ -1,4 +1,4 @@
-# Table of contents ('User' section):
+# Contents (the User section):
 ### [1. Homepage](homepage.md)
 ### [2. Register](register.md)
 ### [2. Login](login.md)

@@ -10,16 +10,16 @@ const { expect } = require('chai');
 // То есть переменная `newHeight` будет на 5 больше `height`
 // Приведем пример, коорый принципиально похож на то что нужно сделать
 
-```
-const before = 32;
-const after = before + 4;
-```
+// ```
+// const before = 32;
+// const after = before + 4;
+// ```
 
 // Конечно вы можете написать
-  ```
-const before = 32;
-const after = 36;
-```
+//   ```
+// const before = 32;
+// const after = 36;
+// ```
 // Но в этом случае вторая переменная не будет зависеть от значения первой переменной
 
 
@@ -29,7 +29,7 @@ const newHeight = height + 4;
 
 
 // Tests
-it('should variable `height` be a number', function () {
+it('should variable `height` be a number',  () => {
   expect(height).a('number');
 });
 

@@ -7,37 +7,37 @@ const { expect } = require('chai');
 
 // Description
 // Каков результат возведения в третью степень числа -30?
-// Создайте переменную `number` и присвойте ей значение -30.
+// Создайте переменную `number2` и присвойте ей значение -30.
 // Создайте переменную `stepen` и присвойте ей значение 3.
-// Создайте переменную `result` и присвойте ей значение `number` в степени `stepen`.
+// Создайте переменную `result` и присвойте ей значение `number2` в степени `stepen`.
 
 // Приведем пример, который принципиально похож на то что нужно сделать,
 // но адаптируйте его к требованиям задачи:
 
 // ```
-// const n = 5;
+// const number = 5;
 // const cube = 3;
-// const result = n ** cube;
+// const result = number ** cube;
 // ```;
 
 // Solution
-const number = -30;
+const number2 = -30;
 const stepen = 3;
-const result = number ** stepen;
+const result = number2 ** stepen;
 
 
 // Tests
-//................number.............................
-it('Переменная `number` содержит значение', () => {
-    expect(number).not.undefined;
+//................number2.............................
+it('Переменная `number2` содержит значение', () => {
+    expect(number2).not.undefined;
 });
 
-it('Переменная `number` содержит число', () => {
-    expect(number).a('number');
+it('Переменная `number2` содержит число', () => {
+    expect(number2).a('number');
 });
 
-it('Переменная `number` равна -30', () => {
-    expect(number).eq(-30);
+it('Переменная `number2` равна -30', () => {
+    expect(number2).eq(-30);
 });
 
 //................stepen.............................

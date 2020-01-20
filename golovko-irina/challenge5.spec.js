@@ -28,7 +28,6 @@ const result = seconds ** power;
 
 
 // Tests
-//................seconds.............................
 it('Переменная `seconds` содержит значение', () => {
     expect(seconds).not.undefined;
 });
@@ -41,7 +40,6 @@ it('Переменная `seconds` равна 60', () => {
     expect(seconds).eq(60);
 });
 
-//................power.............................
 it('Переменная `power` содержит значение', () => {
     expect(power).not.undefined;
 });
@@ -54,7 +52,6 @@ it('Переменная `power` равна 2', () => {
     expect(power).eq(2);
 });
 
-//................result.............................
 it('Переменная `result` содержит значение', () => {
     expect(result).not.undefined;
 });

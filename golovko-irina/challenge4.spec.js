@@ -29,7 +29,7 @@ const result = number3 ** stepen;
 
 
 // Tests
-//................number3.............................
+
 it('Переменная `number3` содержит значение', () => {
     expect(number3).not.undefined;
 });
@@ -42,7 +42,6 @@ it('Переменная `number3` равна 2', () => {
     expect(number3).eq(2);
 });
 
-//................stepen.............................
 it('Переменная `stepen` содержит значение', () => {
     expect(stepen).not.undefined;
 });
@@ -55,7 +54,6 @@ it('Переменная `stepen` равна -3', () => {
     expect(stepen).eq(-3);
 });
 
-//................result.............................
 it('Переменная `result` содержит значение', () => {
     expect(result).not.undefined;
 });

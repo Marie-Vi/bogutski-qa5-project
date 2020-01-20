@@ -30,7 +30,7 @@ const result = number ** power;
 
 
 // Tests
-//................number.............................
+
 it('Переменная `number` содержит значение', () => {
     expect(number).not.undefined;
 });
@@ -43,7 +43,6 @@ it('Переменная `number` равна 10', () => {
     expect(number).eq(10);
 });
 
-//................power.............................
 it('Переменная `power` содержит значение', () => {
     expect(power).not.undefined;
 });
@@ -56,7 +55,6 @@ it('Переменная `power` равна 5', () => {
     expect(power).eq(5);
 });
 
-//................result.............................
 it('Переменная `result` содержит значение', () => {
     expect(result).not.undefined;
 });

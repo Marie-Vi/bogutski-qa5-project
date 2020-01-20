@@ -28,7 +28,7 @@ const result = number1 ** power1;
 
 
 // Tests
-//................number1.............................
+
 it('Переменная `number1` содержит значение', () => {
     expect(number1).not.undefined;
 });
@@ -41,7 +41,6 @@ it('Переменная `number1` равна 101', () => {
     expect(number1).eq(101);
 });
 
-//................power1.............................
 it('Переменная `power1` содержит значение', () => {
     expect(power1).not.undefined;
 });
@@ -54,7 +53,6 @@ it('Переменная `power1` равна 0', () => {
     expect(power1).eq(0);
 });
 
-//................result.............................
 it('Переменная `result` содержит значение', () => {
     expect(result).not.undefined;
 });

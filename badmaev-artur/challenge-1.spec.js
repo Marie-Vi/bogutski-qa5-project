@@ -15,6 +15,7 @@ const football ='Barcelona';
 
 // Tests
 
+
 it('Переменная `football` сушествует и имеет значение', () => {
   expect(football).not.undefined;
 });

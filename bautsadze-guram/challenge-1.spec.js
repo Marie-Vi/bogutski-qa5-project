@@ -1,5 +1,25 @@
 const { expect } = require('chai');
 
+/*
+Name
+Найти длину строки
+
+Description
+
+Создайте переменную `volcanoName` и присвойте ей значение `Eyjafjallajokull`,
+создайте вторую перемeнную `strLength` и при помощи свойства length получите длину строки переменной `volcanoName`.
+В результате вы узнаете, какое количество букв содержит название знаменитого исландского вулкана.
+
+Приведем пример, который принципиально похож на то что нужно сделать,
+но адаптируйте его к требованиям задачи.
+```
+const mountainName = `Hvannadalshnukur`; // самая высокая гора в Исландии
+const strLength = mountainName.length; // 16
+```
+ */
+
+// Solution
+
 // Name
 // Найти длину строки
 
@@ -15,6 +35,7 @@ const { expect } = require('chai');
 // const strLength = mountainName.length; // 16
 
 // Solution
+
 const volcanoName = 'Eyjafjallajokull';
 const strLength = volcanoName.length;
 

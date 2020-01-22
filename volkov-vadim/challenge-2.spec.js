@@ -21,24 +21,25 @@ const after = before * 4;
 // Solution
 let string = 'What’s up?';
 
-function sentReverse(str){
+function sentReverse(str) {
   let rev = '';
   if (str === '') return 'Warning: strReverse dosnt work with empty string';
   if (str.length === 1) return str;
-  for(let i = 0; i < str.length; i++){
+  for (let i = 0; i < str.length; i++) {
     rev = str[i] + rev;
   }
   return rev;
 }
+
 console.log(sentReverse(string));
 
 // Tests
 const expected = '?pu s’tahW';
 
-  it('empty string should return Warning message', () => {
-    expect(sentReverse('')).equal('Warning: strReverse dosnt work with empty string');
-  });
+it('empty string should return Warning message', () => {
+  expect(sentReverse('')).equal('Warning: strReverse dosnt work with empty string');
+});
 
-  it('should reverse worlds in sentence', () => {
-    expect(sentReverse(string)).equal(expected);
-  });
+it('should reverse worlds in sentence', () => {
+  expect(sentReverse(string)).equal(expected);
+});

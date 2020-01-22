@@ -32,7 +32,3 @@ it('Переменная "myHero" явлется string', () => {
 it('Переменная "myHero" содержит значение Pavlik Morozoff', () => {
   expect(myHero).eq('Pavlik Morozoff');
 });
-
-
-
-

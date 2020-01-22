@@ -27,6 +27,17 @@ availability for new students -> true;
 Ваша задача создать три объекта dorm1, dorm2 и dorm3 и поместить в них указанные данные. Не забывайте использовать
 CamelCase для записи имен переменных и ключей, состоящих из нескольких слов.
 
+Приведем пример, который принципиально похож на то что нужно сделать:
+```
+const dorm = {
+    department:'math',
+    numberOfStudents: 90,
+    address: 'somewhere',
+    availabilityForNewStudents: true
+};
+
+```
+
 */
 
 // Solution

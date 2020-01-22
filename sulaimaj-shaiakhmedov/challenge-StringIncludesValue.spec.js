@@ -3,6 +3,7 @@ const { expect } = require('chai');
 /*
 Name
 Лучший сотрудник 4го квартала года
+Тема: Тип данных String (Строка)
 
 Description
 
@@ -15,6 +16,7 @@ Description
 ```
 const decentCandidate2019='Employee Name is the most decent person in XX century';
 const person = 'Name';
+decentCandidate2019.includes(person)==true;
 
 ```
 */
@@ -43,5 +45,5 @@ it('Переменная employee содержит тип данных String', 
 });
 
 it('Переменная bestEmployeeQ4 содержит значение переменной employee', () => {
-  expect(bestEmployeeQ4).include('Malik Amirov Junior');
+  expect(bestEmployeeQ4).include(employee);
 });

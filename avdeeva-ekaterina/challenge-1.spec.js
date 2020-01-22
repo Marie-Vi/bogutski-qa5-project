@@ -16,17 +16,16 @@ const nameOfNewspaper = 'The New York Times';
 const nameOfBook = 'Alice in Wonderland';
 
 // Tests
-
 it('Переменная `nameOfBook` существует и имеет значение', () => {
-    expect(nameOfBook).not.undefined;
+  expect(nameOfBook).not.undefined;
 });
 
-it('Переменная `nameOfBook` содержит тип данных string',  () => {
-    expect(nameOfBook).a('string');
+it('Переменная `nameOfBook` содержит тип данных string', () => {
+  expect(nameOfBook).a('string');
 });
 
-it('Переменная `nameOfBook` содержит значение `Alice in Wonderland`, () => {
-    expect(nameOfBook).eq('Alice in Wonderland');
+it('Переменная `nameOfBook` содержит значение `Alice in Wonderland`', () => {
+  expect(nameOfBook).eq('Alice in Wonderland');
 });
 
 

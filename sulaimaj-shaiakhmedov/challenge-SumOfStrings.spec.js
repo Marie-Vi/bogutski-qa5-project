@@ -3,24 +3,28 @@ const { expect } = require('chai');
 /*
 Sum of two Strings
 Сумма двух переменных типа String и number
+Тема: Конкатенация разных переменных
 
 Description
 
-Создайте переменные типа number 'year' и типа String 'month' и присвойте им значения 2020
+Создайте переменные типа number `year` и типа String `month` и присвойте им значения 2020
 и 'January' соответственно.
 
 Приведем пример, который принципиально похож на то что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
 let lastYear = 2019;
-let previousMonth="December"
+let previousMonth="December";
+lastYear+" "+previousMonth;
 
 ```
 */
 
 // Solution
-let year=2020;
-let month='January';
+
+  let year = 2020;
+  let month = 'January';
+  console.log(year+" " + month);
 
 // Tests
 

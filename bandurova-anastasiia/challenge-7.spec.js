@@ -2,7 +2,7 @@ const { expect } = require('chai');
 
 /*
 Name
-Кто из подруг собрал больше грибов?
+Boolean. Кто из подруг собрал больше грибов?
 
 Description
 
@@ -28,30 +28,38 @@ const trueOrFalse = firstCart < secondCart;
 
 // Tests
 
-it('Переменная `firstCart` существует и содержит данные', () => {
+it('Переменная `firstCart` существует и содержит значение', () => {
   expect(firstCart).not.undefined;
 });
 
-it('Переменная `secondCart` существует и содержит данные', () => {
+it('Переменная `secondCart` существует и содержит значение', () => {
   expect(secondCart).not.undefined;
 });
 
-it('Переменная `trueOrFalse` существует и содержит данные', () => {
+it('Переменная `trueOrFalse` существует и содержит значение', () => {
     expect(trueOrFalse).not.undefined;
 });
 
-it('Переменная `firstCart` содержит данные number', () => {
+it('Переменная `firstCart` содержит тип данных `number`', () => {
   expect(firstCart).a('number');
 });
 
-it('Переменная `secondCart` содержит данные number', () => {
+it('Переменная `secondCart` содержит тип данных `number`', () => {
   expect(secondCart).a('number');
 });
 
-it('Переменная `trueOrFalse` содержит тип данных boolean', () => {
+it('Переменная `trueOrFalse` содержит тип данных `boolean`', () => {
   expect(trueOrFalse).a('boolean');
 });
 
-it('Переменная `trueOrFalse` должна содержать значение true ', () => {
+it('Переменная `firstCart` содержит значение 20', () => {
+  expect(firstCart).eq(20);
+});
+
+it('Переменная `secondCart` содержит значение 23', () => {
+  expect(secondCart).eq(23);
+});
+
+it('Переменная `trueOrFalse` содержит значение `true`', () => {
   expect(trueOrFalse).eq(true);
 });

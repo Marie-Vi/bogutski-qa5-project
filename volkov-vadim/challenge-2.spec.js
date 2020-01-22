@@ -19,35 +19,26 @@ const after = before * 4;
 */
 
 // Solution
-const level1 = -8;
-const levelUp = level1 * 7;
+let string = 'What’s up?';
+
+function sentReverse(str){
+  let rev = '';
+  if (str === '') return 'Warning: strReverse dosnt work with empty string';
+  if (str.length === 1) return str;
+  for(let i = 0; i < str.length; i++){
+    rev = str[i] + rev;
+  }
+  return rev;
+}
+console.log(sentReverse(string));
 
 // Tests
+const expected = '?pu s’tahW';
 
-it('Переменная `level1` содержит значение', () => {
-  expect(level1).not.undefined;
-});
+  it('empty string should return Warning message', () => {
+    expect(sentReverse('')).equal('Warning: strReverse dosnt work with empty string');
+  });
 
-it('Переменная `level1` содержит число', () => {
-  expect(level1).a('number');
-});
-
-it('Переменная `level1` больше чем -10', () => {
-  expect(level1).gte(-10);
-});
-
-it('Переменная `level1` меньше чем -5', () => {
-  expect(level1).lte(-5);
-});
-
-it('Переменная `levelUp` содержит значение', () => {
-  expect(levelUp).not.undefined;
-});
-
-it('Переменная `levelUp` содержит число', () => {
-  expect(levelUp).a('number');
-});
-
-it('Переменная `levelUp` больше чем `level1` в 7 раз', () => {
-  expect(level1 * 7).eq(levelUp);
-});
+  it('should reverse worlds in sentence', () => {
+    expect(sentReverse(string)).equal(expected);
+  });

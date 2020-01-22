@@ -21,7 +21,7 @@ const myHero = 'Pavlik Morozoff';
 
 // Tests
 
-it('Переменная "myHero"существует и имеет значение', () => {
+it('Переменная "myHero" существует и имеет значение', () => {
   expect(myHero).not.undefined;
 });
 

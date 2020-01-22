@@ -22,6 +22,7 @@ const person = 'Name';
 // Solution
 let bestEmployeeQ4='Malik Amirov Junior is the best employee of Q4 2019.';
 let employee='Malik Amirov Junior';
+bestEmployeeQ4.includes(employee);
 
 // Tests
 
@@ -35,6 +36,10 @@ it('Переменная employee существует и имеет значе�
 
 it('Переменная bestEmployeeQ4 содержит тип данных String', () => {
   expect(bestEmployeeQ4).a('String');
+});
+
+it('Переменная employee содержит тип данных String', () => {
+  expect(employee).a('String');
 });
 
 it('Переменная bestEmployeeQ4 содержит значение переменной employee', () => {

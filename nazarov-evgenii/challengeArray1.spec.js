@@ -26,8 +26,18 @@ const train = [12,42,5,0,12+42+5];
 
 
 // Tests
-it('should train variable be equal to [ 12, 42, 5, 0, 59 ]',  () => {
+it('переменная train должа хранить тип данных массив',  () => {
+    expect(train).a('array')
+});
+
+it('длина массива train должна быть равна 5',  () => {
+    expect(train.length).eq(5)
+});
+
+
+it('переменная train должна содержать значения [ 12, 42, 5, 0, 59 ]',  () => {
     expect(train).to.deep.equal([12,42,5,0,12+42+5])
 });
+
 
 

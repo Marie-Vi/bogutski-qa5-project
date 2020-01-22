@@ -53,8 +53,12 @@ const dorm3 = {
 
 
 // Tests
-describe('testing dorm2', ()=> {
-    it('should be 4 keys',  () => {
+describe('testing dorm1', ()=> {
+    it('переменная dorm1 должа хранить тип данных объект',  () => {
+        expect(dorm1).a('object')
+    });
+
+    it('у объекта dorm1 должно быть 4-е ключа',  () => {
         expect(Object.keys(dorm1).length).to.be.equal(4)
     });
 
@@ -70,7 +74,11 @@ describe('testing dorm2', ()=> {
 
 
 describe('testing dorm2', ()=> {
-    it('should be 4 keys',  () => {
+    it('переменная dorm1 должа хранить тип данных объект',  () => {
+        expect(dorm2).a('object')
+    });
+
+    it('у объекта dorm2 должно быть 4-е ключа',  () => {
         expect(Object.keys(dorm2).length).to.be.equal(4)
     });
 
@@ -85,7 +93,11 @@ describe('testing dorm2', ()=> {
 });
 
 describe('testing dorm3', ()=> {
-    it('should be 4 keys',  () => {
+    it('переменная dorm3 должа хранить тип данных объект',  () => {
+        expect(dorm3).a('object')
+    });
+
+    it('у объекта dorm3 должно быть 4-е ключа',  () => {
         expect(Object.keys(dorm3).length).to.be.equal(4)
     });
 

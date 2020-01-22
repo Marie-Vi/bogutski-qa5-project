@@ -45,5 +45,3 @@ it('Переменная employee содержит тип данных String', 
 it('Переменная bestEmployeeQ4 содержит значение переменной employee', () => {
   expect(bestEmployeeQ4).include('Malik Amirov Junior');
 });
-
-

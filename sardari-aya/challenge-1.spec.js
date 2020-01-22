@@ -1,44 +1,35 @@
 const { expect } = require('chai');
 
 /*
-Name
-Больше чем предыдущая на 5
+junkFood
+Переменная с именем собаки, которую можно приготовить на гриле.
 
 Description
 
-Создайте переменную `height` и присвойте ей любое число от 10 до 110.
-Создайте вторую переменную `newHeight`, которая будет использовать
-значение переменной `height` плюс 5.
-То есть переменная `newHeight` будет на 5 больше `height`
-Приведем пример, который принципиально похож на то что нужно сделать:
-```
-const before = 32;
-const after = before + 4;
-```
+Создайте переменную `junkFood` и присвойте ей 'James Bond'
 
-Конечно же вы можете написать:
+Приведем пример, который принципиально похож на то что нужно сделать,
+но адаптируйте его к требованиям задачи:
 ```
-const before = 32;
-const after = 36;
+const junkFood = 'Hot-dog';
 ```
-
-Но в этом случае переменная `after`не будет зависеть от значения переменной `before`.
 */
 
 // Solution
-const height = 32;
-const newHeight = height + 5;
-
+const junkFood = 'BBQ';
 
 // Tests
-it('should variable `height` be a number',  () => {
-  expect(height).a('number');
+
+it('Переменная `junkFood` существует и имеет значение', () => {
+  expect(junkFood).not.undefined;
 });
 
-// continue here
+it('Переменная `junkFood` содержит тип данных string', () => {
+  expect(junkFood).a('string');
+});
 
-// check the range of value
+it('Переменная `junkFood` содержит значение Hot-dog', () => {
+  expect(junkFood).get('Hot-dog');
+});
 
-// check newHeight is number
 
-// check newHeight is height + 5

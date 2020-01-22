@@ -5,25 +5,25 @@ Name
 Секретный адрес PASV.us
 
 Description
-Секретный офис школы PASV.us расположен по адресу 'Pentagon, USA' Создайте переменную pasvAddress и
+Секретный офис школы PASV.us расположен по адресу 'Pentagon, USA' Создайте переменную pasvSecretAddress и
 присвойте ей тайный адрес школы PASV.us
 
 */
 
 // Solution
-const pasvAddress = 'Pentagon, USA';
+const pasvSecretAddress = 'Pentagon, USA';
 
 
 
 // Tests
-it('переменная pasvAddress существует',  () => {
-    expect(pasvAddress).not.undefined;
+it('переменная pasvSecretAddress существует',  () => {
+    expect(pasvSecretAddress).not.undefined;
 });
 
-it('переменная pasvAddress одержил строковый тип данных',  () => {
-    expect(pasvAddress).a('string');
+it('переменная pasvSecretAddress одержил строковый тип данных',  () => {
+    expect(pasvSecretAddress).a('string');
 });
 
-it('переменная pasvAddress одержит значение Pentagon, USA',  () => {
-    expect(pasvAddress).eq('Pentagon, USA');
+it('переменная pasvSecretAddress одержит значение Pentagon, USA',  () => {
+    expect(pasvSecretAddress).eq('Pentagon, USA');
 });

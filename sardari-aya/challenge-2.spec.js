@@ -17,7 +17,7 @@ const berry = 'watermelon';
 
 // Solution
 const berry = 'Strawberry';
- 
+
 
 // Tests
 

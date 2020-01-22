@@ -2,7 +2,7 @@ const { expect } = require('chai');
 
 /*
 Name
-Лучший сотрудник года
+Лучший сотрудник 4го квартала года
 
 Description
 

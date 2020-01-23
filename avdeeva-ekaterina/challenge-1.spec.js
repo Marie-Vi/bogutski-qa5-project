@@ -9,7 +9,9 @@ Description
 
 Приведем пример, который принципиально похож на то, что нужно сделать,
 но адаптируйте его к требованиям задачи:
+```
 const nameOfNewspaper = 'The New York Times';
+```
  */
 
 // Solution

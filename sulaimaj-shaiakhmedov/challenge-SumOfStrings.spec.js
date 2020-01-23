@@ -1,57 +1,59 @@
-const { expect } = require('chai');
+const {expect} = require('chai');
 
 /*
 Sum of two Strings
-Сумма двух переменных типа String и number
-Тема: Конкатенация разных переменных
+Сумма двух значений типа string и number
+Тема: Конкатенация переменных
 
 Description
 
-Создайте переменные типа number `year` и типа String `month` и присвойте им значения 2020
-и 'January' соответственно.
+Создайте переменную `year` и  `month`.
+Присвойте переменной `year` значение 2020 типа Number
+и переменной `month' значение текущего месяца 'January' типа String.
+Сложите две переменные, добавив пробел между ними, получив 'January 2020'.
 
-Приведем пример, который принципиально похож на то что нужно сделать,
+Приведем пример, который принципиально похож на то, что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
 let lastYear = 2019;
-let previousMonth="December";
-lastYear+" "+previousMonth;
+let previousMonth = 'December';
+lastYear + " " + previousMonth = 'December 2019';
 
 ```
 */
 
 // Solution
 
-  let year = 2020;
-  let month = 'January';
-  console.log(year+" " + month);
+let year = 2020;
+let month = 'January';
+console.log(year + " " + month);
 
 // Tests
 
-it('Переменная year существует и имеет значение', () => {
-  expect(year).not.undefined;
+it('Переменная `year` существует и имеет присовенное значение', () => {
+    expect(year).not.undefined;
 });
 
-it('Переменная month существует и имеет значение', () => {
-  expect(month).not.undefined;
+it('Переменная `month` существует и имеет присвоенное значение', () => {
+    expect(month).not.undefined;
 });
 
-it('Переменная `year` содержит тип данных number integer', () => {
-  expect(year).a('Number');
+it('Переменная `year` содержит тип данных Number integer', () => {
+    expect(year).a('number');
 });
 
 it('Переменная `month` содержит тип данных String', () => {
-  expect(month).a('string');
+    expect(month).a('string');
 });
 
-it('Значение переменной year содержит значение 2020', () => {
-  expect(year).equal(2020);
+it('Значение переменной `year` содержит заданное значение 2020', () => {
+    expect(year).equal(2020);
 });
 
-it('Значение переменной month содержит значение \n January', () => {
-  expect(month).equal('January');
+it('Значение переменной `month` содержит заданное значение \n January', () => {
+    expect(month).equal('January');
 });
 
-it('Значение суммы переменной year и month содержит пробел и равно January 2020', () => {
-  expect(month+" "+year).equal('January 2020');
+it('Значение сложения переменной `year` и `month` содержит пробел между ними и равно January 2020', () => {
+    expect(month + " " + year).equal('January 2020');
 });

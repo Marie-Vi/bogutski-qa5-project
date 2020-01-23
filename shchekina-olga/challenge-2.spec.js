@@ -16,7 +16,7 @@ Description
 ```
 const c = '24';
 const d = '10';
-const sum = c + d;;
+const sum = c + d;
 ```
 */
 

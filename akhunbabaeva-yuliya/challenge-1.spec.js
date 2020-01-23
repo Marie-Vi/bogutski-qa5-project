@@ -2,15 +2,16 @@ const { expect } = require('chai');
 
 /*
 Name
-Больше чем предыдущая на 3
+Меньше чем предыдущая на 5
 
 Description
 
-Осенью в саду Лена посадила 12 луковиц тюльпанов `tulips`.
-Весной расцвело 15 тюльпанов `newTulips`, что больше `tulips` на 3.
+Осенью в саду Лена посадила 15 луковиц тюльпанов `tulips`.
+Весной расцвело 10 тюльпанов `newTulips`, что меньше `tulips` на 5.
 
-const tulips = 12;
-const newTulips = tulips + 3;
+Приведем пример, который принципиально похож на то что нужно сделать:
+const flowers  = 15;
+const newFlowers = flowers - 5;
 ```
 
 // Solution
@@ -19,30 +20,30 @@ const newTulips = tulips + 3;
 
  */
 
-const tulips = 12;
-const newTulips = tulips + 3;
+const tulips = 15;
+const newTulips = tulips - 5;
 
 it('should variable `tulips` be a number',  () => {
     expect(tulips).a('number');
 });
 
 it('should `tulips` equal ',  () => {
-    expect(tulips).eq(12);
+    expect(tulips).eq(15);
 });
 
 it('should `newTulips` be a number ',  () => {
     expect(newTulips).a('number');
 });
 
-it('should `newTulips` equal tulips + 3' ,  () => {
-    expect(tulips+3).eq(newTulips);
+it('should `newTulips` equal tulips - 5' ,  () => {
+    expect(tulips-5).eq(newTulips);
 });
 
-it('should `newTulips` greater than 14', () => {
-    expect(newTulips).gte(14);
+it('should `newTulips` greater than 9', () => {
+    expect(newTulips).gte(9);
 });
 
-it('should `tulips` greater than 11', () => {
-    expect(tulips).gte(11);
+it('should `tulips` greater than 14', () => {
+    expect(tulips).gte(14);
 });
 

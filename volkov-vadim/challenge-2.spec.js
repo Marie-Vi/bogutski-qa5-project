@@ -1,29 +1,30 @@
 const { expect } = require('chai');
 
 /*
-Name
-Больше, чем предыдущая в 7 раз.
+Reverce String
+
 
 Description
 
-Создайте переменную `level1` и присвойте ей любое число от -10 до -5.
-Создайте вторую переменную `levelUp`, которая будет использовать
-значение переменной `level1`, то есть переменная `levelUp` будет в 7 раз больше чем `level1`
+Создайте переменную `phrase` и присвойте ей свою любимую фразу, идиому или пословицу на английском.
+Создайте фуникцию разворачивающую строку. Не исползуйте методы. Строка не должна быть пустой.
+В случае пустой строки функция должна возвращать предупреждение: 'Warning: empty string!'
+
 
 Приведем пример, который принципиально похож на то что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
-const before = -2;
-const after = before * 4;
+const before = "The early bird catches the worms";
+const after = 'smrow eht sehctac drib ylrae ehT';
 ```
 */
 
 // Solution
-let string = 'What’s up?';
+const phrase = 'What’s up?';
 
 function sentReverse(str) {
   let rev = '';
-  if (str === '') return 'Warning: strReverse dosnt work with empty string';
+  if (str === '') return 'Warning: empty string!';
   if (str.length === 1) return str;
   for (let i = 0; i < str.length; i++) {
     rev = str[i] + rev;
@@ -31,15 +32,19 @@ function sentReverse(str) {
   return rev;
 }
 
-console.log(sentReverse(string));
 
 // Tests
-const expected = '?pu s’tahW';
+
+let expected = phrase.split('').reverse().join('');
+
+it('Переменная "phrase" явлется string', () => {
+  expect(phrase).a('String');
+});
 
 it('empty string should return Warning message', () => {
-  expect(sentReverse('')).equal('Warning: strReverse dosnt work with empty string');
+  expect(sentReverse('')).equal('Warning: empty string!');
 });
 
 it('should reverse worlds in sentence', () => {
-  expect(sentReverse(string)).equal(expected);
+  expect(sentReverse(phrase)).equal(expected);
 });

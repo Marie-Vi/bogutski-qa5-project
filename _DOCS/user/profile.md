@@ -1,80 +1,99 @@
-matsakova-dayana	Profile
+[<<< Back to Table of Contents](index.md)
+## PROFILE PAGE
 
-Profile page is displayed after User clicks Login button on homepage.
-Then User should be redirected to https://app.pasv.us/user/
-Profile page is a display or a summary of User account.
+#### 1. Description of Profile page
 
-There is Menu bar with 5 fields (hyperlinks):
-* Progress Monitor: 
-After clicking on it User goes to the homepage
+##### 1.1. "Profile" page is displayed after the User clicks the **Login** button on homepage.
+Then the User should be redirected to URL: https://app.pasv.us/user/.
+Profile page is a display or a summary of the User's account.
 
-* Courses:
-After clicking on it User goes to https://app.pasv.us/course. 
-Here User can find available for him/her list of courses.
+There is a Menu bar with 5 fields (hyperlinks):https://app.pasv.us.
+* **Progress Monitor:** after clicking it the User goes to the homepage.
 
-* Cards:
-After clicking on it User goes to https://app.pasv.us/flash.
-Here User can find list of FlashCards.
+* **Courses:** after clicking it the User goes to https://app.pasv.us/course.
+Here, the User can find available for them list of courses.
 
-* Groups:
-After clicking on it User goes to https://app.pasv.us/group.
-Here User can find the list of all available lectures divided by topic.
+* **Cards:** after clicking it the User goes to https://app.pasv.us/flash.
+Here, the User can find list of FlashCards.
 
-* Diary:
-After clicking on it User goes to https://app.pasv.us/diary.
-On this page User can create his/her daily report and 
+* **Groups:** after clicking it the User goes to https://app.pasv.us/group.
+Here, the User can find the list of all available lectures divided by topics.
+
+* **Diary:** after clicking it the User goes to https://app.pasv.us/diary.
+On this page the User can create their daily report and
 see daily reports of other members of group.
 
-Profile page also contains a field(hyperlink) with User name.
+##### 1.2. "Profile" page also contains a field (hyperlink) with the User name.
+After clicking it dropdown list pops-up.
 
-After clicking on it dropdown list pops-up. There are 3 options:
+There are 3 options:
 
-* Profile: this field is active but it doesn’t redirect User anywhere. 
-So he/she stays on the same page.
+* **Profile:** this field is active but it does not redirect the User anywhere.
+So, they stay on the same page;
 
-* Settings: this field redirects User to https://app.pasv.us/user/edit/ 
-Here he/she can edit his/her Profile.
+* **Settings:** this field redirects the User to https://app.pasv.us/user/edit/
+Here they can edit their Profile;
 
-* Log out: by clicking on it User can log out. 
+* **Logout:** by clicking it the User can log out.
 
-On Profile page User can also see 3 small icons and 2 labels:
-* GitHub icon:
-It redirects User to his/her GitHub account.
-* Codewars icon:
-It redirects User to his/her Codewars account.
-* Slack icon:
-It redirects User to his/her Slack account.
-* The label shows the name of the group in which User is studying.
-* This label shows User role. It can be new, learner, student, teacher or admin.
+##### 1.3. On "Profile" page the User can also see small icons and labels. 
+Icon is available if the User indicated link to the website during registration.
 
-matyeva-aika	Profile
-melnik-aleksandr	Profile
-miroshnikov-maksim	Profile
-nazarov-evgenii	Profile
-` made by Nazarov Evgenii`
-# ***Completed challenges*** field
-###### Purpose of the field
-* `Completed Challenges` is a profile page field which main idea is to show a a list of User completed katas 
-in Codewars
+* **Google Docs icon:** it redirects the User to their Google Document.
 
-* An example of a proper title is: 
-### Completed Challenges 258 
-where `258` means a total number of a student solved katas
+* **Facebook icon:** it redirects the User to their Facebook account.
 
-## Button `Update list`
-* It refreshes the list of solved katas
+* **LinkedIn icon:** it redirects the User to their LinkedIn account.
 
-## List of solved katas
-* List has to include a table with two columns. Columns have no headers. Each line describes one 
-certain kata.
-    * First column contains date and time when the kata was solved.
-    * Second column contains the name of solved kata which has to be a hyperlink leading to this kata
-    at codewars
+* **GitHub icon:** it redirects the User to their GitHub account.
 
-* List has to display all solved katas and has to be sorted by solved date.
+* **Codewars icon:** it redirects the User to their Codewars account.
+
+* **Slack icon:** it redirects the User to their Slack account.
+
+* The label (for example, **QA5**) shows the name of the group in which the User is studying.
+
+* This label shows **User role**. It can be new, learner, student, teacher, admin etc.
+
+#### 2. Description of Codewars elements.
+
+Description is made for the User in the role of student:
+
+* **Coin:** the numbers to the right of the coin indicate the User's progress;
+
+* **Rank:** shows the level of the User's development depending on the tasks (hereinafter, katas) being solved on Codewars;
+
+* **Honor:** shows the number of points assigned to the User depending on the tasks performed on Codewars;
+
+* **Task Completed:** shows the number of tasks performed in Codewars (including repeating decisions);
+
+* the **graph** shows the progress of the User depending on the Honor and the Completed task in time, expressed in days of the month.
+
+#### 3. About
+* Field **About** shows information of the User’s experience, skills, and hobbies.
+Information can appear in the User’s preferred language.
+* Text area is required.
+* The default state is zero character and the placeholder is "I'm … ".
+
+#### 4. Goals
+* The User is asked to tell about their goals in programming and career. 
+* Text area is required.
+* The default state is zero character and the placeholder is "1… 2… 3… ".
+
+#### 5. Completed challenges
+##### 5.1. Purpose of the field:
+* **Completed Challenges** is a profile page field which main idea is to show a list of the User's completed tasks in Codewars.
+
+##### 5.2. Button Update list:
+* It refreshes the list of solved katas.
+
+##### 5.3. List of solved katas
+* List has to include a table with two columns. Columns have no headers. Each line describes one certain kata:
+* First column contains date and time when the kata was solved.
+* Second column contains the name of solved kata which has to be a hyperlink leading to this kata at Codewars.
+* List has to display all solved katas and has to be sorted by date, when kata was performed.
 * The whole list has to be displayed at one web page.
 * An example of list:
-
 
 |     |     |
 | --- | --- |
@@ -84,61 +103,22 @@ certain kata.
 | **11.11.19**  _21:15_ | [Multiply](https://www.codewars.com/kata//50654ddff44f800200000004) |
 
 
+#### 6. Daily reports
+##### 6.1. Description of Daily reports:
 
-#### nikolaev-artem	Profile
-**Description of the page "personal account" on the website: 
-https://app.pasv.us/ (Version 0.1.107).
-Description is made for the role: student.**
-*  Coin. The numbers to the right of the coin indicate the user's progress.
-*  Rank. Shows the level of user development depending on the tasks being solved on Codewars.
-*  Honor. Shows the number of points assigned to the user depending on the tasks performed on Codewars.
-*  Completed task. Shows the number of tasks performed in Codewars. (including repeating decisions).
-* The graph shows the progress of the user depending on the Honor and the Completed task in time, expressed in days of the month.
+* One of the obligatory parts for Student role is creating **Daily reports**.
+* After Daily report was created by the User (using **Create day report** button on https://app.pasv.us/user/),
+it appears on the list of all Users' Daily reports.
+* Label Daily reports is located on the top of Daily reports section.
+* To the right from Daily report there is a label icon with quantity of Daily reports created by the current User.
 
-Omelchenko-Kateryna	Profile
+##### 6.2. Structure:
 
-# Daily reports
-#### Description: 
-One of the obligatory parts for Student role at https://app.pasv.us/ is creating daily reports.
-After daily report was created by User (using Create day report button on the Home page of Profile page)
-and Approved by Administrator or other person with such privilege
-it appears on the list of all User’s Daily reports on the Daily reports section.
-Label Daily reports is located on the top of Daily reports section, 
-on the right from Daily report there is a label icon with number of Daily reports
-current User has created (and Admin approved).
-
-#### Structure: 
-
-New Daily reports are added to the top of the list of previous Daily reports;
-Each Daily report on the list has a line that shows the date of creation ( Month, Day, Year and Time); 
-Under the date labels with names of dropdown fields that User chose while creating daily report are displayed.
+* New Daily reports are added to the top of the list of previous reports.
+* Each Daily report in the list has a line that shows the date of creation (Month, Day, Year and Time).
+* Under the date labels with titles of checkbox fields that the User chose while creating Daily report are displayed.
 Then actual text of Daily report is shown.
-There is Like icon that shows how many likes this report has (from other Users). User can Like his own report.
+* There is Like icon that shows how many likes this report has (from other Users). The User can **Like** his own report.
+* The User’s report can be approved by Admin or other person with the same privilege.
 
-omuraliev-miradil	Profile
-
--------------------------------------------------------------------
-### Miradil Omuraliev
-
-***About:***
-* --About field shows User information about his/her experience, skills, hobbies. 
-Information can appear in the user’s preferred language.
-
-***Example:***
-IT specialist with 7+ years of professional experience in information security
-I have a variety of hobbies. I hike with my dog every chance I get. I spend time with my spouse and children...
-
-***Footer:***
-* --Footer field contains version number, copyright notice with year and application slogan “eat(); sleep(); code(); repeat();” 
-
-***Example:***
-Version 0.1.109
-© 2019 eat(); sleep(); code(); repeat();
---------------------------------------------------------------------
-
-
-paromova-anastasiia	Profile
-***Goals:*** 
-User is asked to tell about his goals in programming and career. 
-Text area is required.
-The default state is zero character and the placeholder is  "1… 2… 3… "
+[<<< Back to Table of Contents](index.md)

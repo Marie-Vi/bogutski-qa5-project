@@ -3,33 +3,62 @@ const { expect } = require('chai');
 /*
 Name
 Упражнение на слияние строк.
+Составьте фразу из слов.
 
 Description
 
-В Солнечной системе имеется восемь известных планет: Меркурий, Венера, Земля, Марс, Юпитер, Сатурн, Уран и Нептун.
-Создайте переменную `planet` и присвойте ей значение `Saturn`.
+Создайте переменную `firstPart` и присвойте ей значение `Welcome to`.
+Создайте переменную `secondPart` и присвойте ей значение `Sacramento, California!`.
+Создайте переменную `phrase` и присвойте ей значение слияния этих двух строк с пробелом между ними.
 
-Приведем пример, который принципиально похож на то что нужно сделать,
-но адаптируйте его к требованиям задачи:
+Приведем пример, который принципиально похож на то что нужно сделать, но адаптируйте его к требованиям задачи:
 ```
-const star = 'Sirius';
+const greeting = `Hello,`;
+const name = `John Smith!`;
+const sayHello = greeting + ' ' + name; (обратите внимание на обозначение пробела между строками)
 ```
 */
 
 // Solution
-const planet = 'Saturn';
-
+const firstPart = 'Welcome to';
+const secondPart = 'Sacramento, California!';
+const sayHello = firstPart + ' ' + secondPart;
 
 // Tests
 
-it('Переменная `planet` содержит значение', () => {
-    expect(planet).not.undefined;
+it('Переменная `firstPart` содержит значение', () => {
+    expect(firstPart).not.undefined;
 });
 
-it('Переменная `planet` содержит тип данных string', () => {
-    expect(planet).a('string');
+it('Переменная `secondPart` содержит значение', () => {
+    expect(secondPart).not.undefined;
 });
 
-it('Переменная `planet` содержит значение "Saturn"', () => {
-    expect(planet).eq("Saturn");
+it('Тип данных переменной `firstPart` является строкой', () => {
+    expect(firstPart).a('string');
 });
+
+it('Тип данных переменной `secondPart` является строкой', () => {
+    expect(secondPart).a('string');
+});
+
+it('Переменная `firstPart` содержит значение `Welcome to`', () => {
+    expect(firstPart).eq("Welcome to");
+});
+
+it('Переменная `secondPart` содержит значение `Sacramento, California!`', () => {
+    expect(secondPart).eq("Sacramento, California!");
+});
+
+it('Переменная `sayHello` содержит значение', () => {
+    expect(sayHello).not.undefined;
+});
+
+it('Тип данных переменной `sayHello` является строкой', () => {
+    expect(sayHello).a('string');
+});
+
+it('Переменная `sayHello` равна слиянию строк firstPart и secondPart', () => {
+    expect(sayHello).eq("Welcome to Sacramento, California!");
+});
+

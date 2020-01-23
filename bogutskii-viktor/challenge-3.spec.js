@@ -16,7 +16,7 @@ const name = 'James Bond';
 // const after = before * 4;
 // ```;
 */// Solution
-const  = name 'James bond';
+const = name 'James bond';
 
 
 // Tests

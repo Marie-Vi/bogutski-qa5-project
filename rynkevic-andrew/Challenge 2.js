@@ -8,7 +8,7 @@ const {expect} = require('chai');
 но адаптируйте его к требованиям задачи:
 
 ```
-const pigOne = "Nif-Nif"
+const gnome = "Happy"
 
 ```
  */

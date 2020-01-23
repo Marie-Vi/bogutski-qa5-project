@@ -15,7 +15,6 @@ const newFlowers = flowers - 5;
 ```
 
 // Solution
-
 // Tests
 
  */

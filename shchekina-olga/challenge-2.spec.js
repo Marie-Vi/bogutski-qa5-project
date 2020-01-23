@@ -31,19 +31,18 @@ it('Переменная `a` существует', () => {
     expect(a).not.undefined;
 });
 it('Переменная `a`  имеет значение `68', () => {
-    expect(a).not.undefined;
+    expect(a).eq('68');
 });
 it('Переменная `a` имеет тип данных string', () => {
-    expect(a).eq('68');
+    expect(a).a('string');
 });
 
 it('Переменная `b` существует', () => {
     expect(b).not.undefined;
 });
-it('Переменная `b` имеет тип данных string', () => {
-    expect(a).eq('12');
+it('Переменная `b`  имеет значение `12', () => {
+    expect(b).eq('12');
 });
-
 it('Переменная `b` имеет тип данных string', () => {
     expect(b).a('string');
 });
@@ -51,9 +50,9 @@ it('Переменная `sum` содержит значение 6812', () => {
     expect(sum).equal('6812');
 });
 it('Переменная `sum` существует ', () => {
-    expect(b).not.undefined;
+    expect(sum).not.undefined;
 });
 
 it('Переменная `sum` имеет тип данных string', () => {
-    expect(b).a('string');
+    expect(sum).a('string');
 });

@@ -47,10 +47,18 @@ function alertVictor(array) {
   for (let i = 0; i < array.length; i++){
     if (array[i] === 'I need help') count++;
   }
-  if (count === 0) return 'So far so good!';
-  else if (count === 1) return 'Alert! Escalate someone to help!';
-  else if (count >= 2 && count <= 3) return 'Alert! Alert! I\'ve got a bad feeling about this!';
-  else return 'Alert! Alert! Alert! May the force be with you, Victor!';
+  if (count === 0) {
+    return 'So far so good!';
+  }
+  else if (count === 1) {
+    return 'Alert! Escalate someone to help!';
+  }
+  else if (count >= 2 && count <= 3) {
+    return 'Alert! Alert! I\'ve got a bad feeling about this!';
+  }
+  else {
+    return 'Alert! Alert! Alert! May the force be with you, Victor!';
+  }
 }
 
 // Tests

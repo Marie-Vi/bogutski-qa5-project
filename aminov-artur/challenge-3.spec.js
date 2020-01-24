@@ -42,11 +42,11 @@ it('Тип данных переменной `secondPart` является ст�
 });
 
 it('Переменная `firstPart` содержит значение `Welcome to`', () => {
-    expect(firstPart).eq("Welcome to");
+    expect(firstPart).eq('Welcome to');
 });
 
 it('Переменная `secondPart` содержит значение `Sacramento, California!`', () => {
-    expect(secondPart).eq("Sacramento, California!");
+    expect(secondPart).eq('Sacramento, California!');
 });
 
 it('Переменная `sayHello` содержит значение', () => {
@@ -58,5 +58,5 @@ it('Тип данных переменной `sayHello` является стр�
 });
 
 it('Переменная `sayHello` равна слиянию строк firstPart и secondPart', () => {
-    expect(sayHello).eq("Welcome to Sacramento, California!");
+    expect(sayHello).eq('Welcome to Sacramento, California!');
 });

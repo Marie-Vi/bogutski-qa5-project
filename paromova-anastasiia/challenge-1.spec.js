@@ -28,7 +28,7 @@ const win = bet * 10;
 // Tests
 
   it('should variable `bet` be a number',  () => {
-    expect(bet).a('bet');
+    expect(bet).a('number');
   });
 
   it('should variable `bet` has a value', () => {
@@ -40,7 +40,7 @@ const win = bet * 10;
   });
 
   it('should variable `win` to be a number',  () => {
-    expect(win).a('bet');
+    expect(win).a('number');
   });
 
   it('should variable `win` has a value', () => {

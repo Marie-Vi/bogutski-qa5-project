@@ -6,30 +6,32 @@ Name
 
 Description
 
-Создайте переменную `actorName` и присвойте ей значение `Brad Pitt`.
+Создайте переменную `favoriteCity` и присвойте ей значение `Miami`.
 
 Приведем пример, который принципиально похож на то что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
-const actorName = 'Leonardo DiCaprio';
+const favoriteCity = 'San Francisco';
 
 ```
 */
 
 // Solution
-const actorName = 'Brad Pitt';
+const favoriteCity = 'Miami';
 
 // Tests
 
-it('Переменная `actorName` существует и имеет значение', () => {
-  expect(actorName).not.undefined;
+it('Переменная `favoriteCity` существует и имеет значение', () => {
+  expect(favoriteCity).not.undefined;
 });
 
-it('Переменная `actorName` содержит тип данных string', () => {
-  expect(actorName).a('string');
+it('Переменная `favoriteCity` содержит тип данных string', () => {
+  expect(favoriteCity).a('string');
 });
 
-it('Переменная `actorName` содержит значение `Brad Pitt` ', () => {
-  expect(actorName).eql('Brad Pitt');
+it('Переменная `favoriteCity` содержит значение `Miami` ', () => {
+  expect(favoriteCity).eql('Miami');
 });
+
+
 

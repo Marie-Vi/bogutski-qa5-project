@@ -51,7 +51,6 @@ describe('Переменная `string`', () => {
     });
 });
 
-
 describe('Переменная `number`', () => {
     it('Переменная `number` существует и имеет значение', () => {
         expect(number).not.undefined;
@@ -69,7 +68,6 @@ describe('Переменная `number`', () => {
         expect(Number.isInteger(number));
     });
 });
-
 
 describe('Переменная `sum`', () => {
     it('Переменная `sum` существует и имеет значение', () => {

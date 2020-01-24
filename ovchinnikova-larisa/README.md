@@ -1,6 +1,7 @@
 # Challenges
 ### Примитивные типы данных
 * [x] Multiplication by 2
+* [x] Сколько всего бананов?
 * [x] Square of a number
 * [x] Create Infinity
 * [x] Create -Infinity

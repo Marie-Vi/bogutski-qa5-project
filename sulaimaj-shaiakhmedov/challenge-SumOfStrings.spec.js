@@ -8,16 +8,16 @@ Sum of two Strings
 Description
 
 Создайте переменную `year` и  `month`.
-Присвойте переменной `year` значение 2020 типа Number
-и переменной `month' значение текущего месяца 'January' типа String.
-Сложите две переменные, добавив пробел между ними, получив 'January 2020'.
+Присвойте переменной `year` значение 2020 и переменной `month' значение текущего месяца 'January'.
+Сложите созданные две переменные, добавив пробел между ними, получив 'January 2020'.
+Занесите полученное значение конкатенции двух переменных в новую переменную `monthYear`.
 
 Приведем пример, который принципиально похож на то, что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
 let lastYear = 2019;
 let previousMonth = 'December';
-lastYear + " " + previousMonth = 'December 2019';
+let month2019 = previousMonth + " " + lastYear;
 
 ```
 */
@@ -26,7 +26,7 @@ lastYear + " " + previousMonth = 'December 2019';
 
 let year = 2020;
 let month = 'January';
-console.log(year + " " + month);
+let monthYear=month + " " + year;
 
 // Tests
 
@@ -38,7 +38,7 @@ it('Переменная `month` существует и имеет присво
     expect(month).not.undefined;
 });
 
-it('Переменная `year` содержит тип данных Number integer', () => {
+it('Переменная `year` содержит тип данных Number', () => {
     expect(year).a('number');
 });
 
@@ -50,10 +50,14 @@ it('Значение переменной `year` содержит заданно
     expect(year).equal(2020);
 });
 
-it('Значение переменной `month` содержит заданное значение \n January', () => {
+it('Значение переменной `month` содержит заданное значение January', () => {
     expect(month).equal('January');
 });
 
-it('Значение сложения переменной `year` и `month` содержит пробел между ними и равно January 2020', () => {
-    expect(month + " " + year).equal('January 2020');
+it('Переменная `monthYear` создана и имеет заданное значение', () => {
+    expect(month).not.undefined;
+});
+
+it('Значение параматера `monthYear` в результате конкатенации переменных `year` и `month` содержит пробел между ними и равно January 2020', () => {
+    expect(monthYear).equal('January 2020');
 });

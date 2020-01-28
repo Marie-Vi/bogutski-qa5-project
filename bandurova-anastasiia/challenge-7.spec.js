@@ -16,7 +16,7 @@ Description
 но адаптируйте его к требованиям задачи:
 ```
 const deckOfCardsForPoker = 52;
-const deckOfCardsForJass= 36;
+const deckOfCardsForJass = 36;
 const trueOrFalse = deckOfCardsForPoker < deckOfCardsForJass; //false
 ```
 */

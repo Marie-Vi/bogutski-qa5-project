@@ -2,12 +2,13 @@ const { expect } = require('chai');
 
 /*
 Name
-Increment
+Number Increment
+
 Description
 
-Создайте переменную `number` и присвойте ей любое число .
+Создайте переменную `anyNumber` и присвойте ей любое число.
 Создайте вторую переменную `newNumber`, которая будет использовать
-значение переменной `number` плюс 1.
+значение переменной `anyNumber` плюс 1.
 Приведем пример, который принципиально похож на то что нужно сделать:
 ```
 const before = 32;
@@ -16,29 +17,29 @@ const after = before + 1;
 */
 
 // Solution
-const number = 32;
-const newNumber = number + 1;
+const anyNumber = 32;
+const newNumber = anyNumber + 1;
 
 
 // Tests
-it('should variable `number` be a number',  () => {
-  expect(number).a('number');
+it('Should variable `anyNumber` has value', () =>{
+  expect(anyNumber).not.undefined;
 });
 
-it('should variable number has value', () =>{
-  expect(number).not.undefined;
+it('Should variable `anyNumber` be a number',  () => {
+  expect(anyNumber).a('number');
 });
 
-it('should variable `newNumber` be a number',  () => {
+it('Should variable `newNumber` be a number',  () => {
   expect(newNumber).a('number');
 });
 
-it('should variable newNumber has value', () =>{
+it('Should variable newNumber has value', () =>{
   expect(newNumber).not.undefined;
 });
 
-it('should variable newNumber has correct value', () =>{
-  expect(newNumber).equal(number + 1);
+it('Should variable newNumber has correct value', () =>{
+  expect(newNumber).equal(anyNumber + 1);
 });
 
 

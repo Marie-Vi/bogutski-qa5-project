@@ -6,17 +6,17 @@ Name
 
 Description
 
-Создайте переменную `fruit` и присвойте ей значение `mango`.
+Создайте переменную `fruit` и присвойте ей значение `Mango`.
 
 Приведем пример, который принципиально похож на то что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
-const vegetable = 'tomato';
+const vegetable = 'Tomato';
 ```
 */
 
 // Solution
-const fruit = 'mango';
+const fruit = 'Mango';
 
 // Tests
 
@@ -28,6 +28,6 @@ it('Переменная `fruit` содержит строку', () => {
   expect(fruit).a('string');
 });
 
-it('Переменная `fruit` содержит `mango`', () => {
-  expect(fruit).eq('mango');
+it('Переменная `fruit` содержит `Mango`', () => {
+  expect(fruit).eq('Mango');
 });

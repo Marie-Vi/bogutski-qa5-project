@@ -2,7 +2,7 @@ const { expect } = require('chai');
 
 /*
 Name
-Переменная с именем птица
+Переменная с именем птицы
 
 Description
 
@@ -20,15 +20,15 @@ const dog = 'Good Guy';
 const bird = 'Eagle';
 
 // Tests
-it('переменная `bird` существует',  () => {
+it('Переменная `bird` существует',  () => {
   expect(bird).not.undefined;
 });
 
-it('переменная `bird` является строкой',  () => {
+it('Переменная `bird` – строка',  () => {
   expect(bird).a('string');
 });
 
-it('переменная `bird` содержит имя bird `Eagle`', () => {
+it('Переменная `bird` содержит строку `Eagle`', () => {
   expect(bird).eq('Eagle');
 });
 

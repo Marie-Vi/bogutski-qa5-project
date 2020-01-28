@@ -31,6 +31,10 @@ it('переменная `beastNumber` является имеет числов�
     expect(beastNumber).a('number');
 });
 
+it('переменная `beastNumber` является не является NaN', () => {
+    expect(isNaN(beastNumber)).false;
+});
+
 it('значение переменной `beastNumber` равно 666', () => {
     expect(beastNumber).equal(666);
 });

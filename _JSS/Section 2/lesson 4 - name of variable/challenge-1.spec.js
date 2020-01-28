@@ -14,24 +14,34 @@ Description
 Для выполнения задания вы должны создать переменные с именами, которые можно использовать в языке JS.
 
 Создайте переменные с допустимыми именами из следующего списка:
-greenColor; 12month; _; amount; first_page; $50; const; null; camelCase; chapter-1.
+* greenColor
+* 12month;
+* _
+* amount
+* first_page
+* $50
+* const
+* null
+* camelCase
+* chapter-1
+
 Присвойте всем созданным переменным значение 1.
 
 Приведем пример, который принципиально похож на то что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
-let pencil = 1;
-let redBook = 1;
+const pencil = 1;
+const redBook = 1;
 ```
 */
 
 // Solution
-let greenColor = 1;
-let  _ = 1;
-let amount = 1;
-let first_page = 1;
-let $50 = 1;
-let camelCase = 1;
+const greenColor = 1;
+const  _ = 1;
+const amount = 1;
+const first_page = 1;
+const $50 = 1;
+const camelCase = 1;
 
 // Tests
 
@@ -51,7 +61,7 @@ it('переменная `_` равна 1', () => {
     expect(_).eq(1);
 });
 
-it('переменная `amount` существуети и имеет тип number', () => {
+it('переменная `amount` существует и имеет тип number', () => {
     expect(amount).a('number');
 });
 

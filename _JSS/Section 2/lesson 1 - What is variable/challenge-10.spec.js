@@ -25,7 +25,3 @@ let phoneNumber;
 it('переменная `phoneNumber` существует и не имеет значения', () => {
     expect(phoneNumber).to.be.undefined;
 });
-
-it('переменная `phoneNumber` имеет тип undefined', () => {
-    expect(typeof phoneNumber).eq('undefined');
-});

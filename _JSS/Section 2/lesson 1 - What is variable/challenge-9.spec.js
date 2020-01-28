@@ -4,32 +4,28 @@ const {expect} = require('chai');
 Section 2. Переменные. Урок 1. Что такое переменная?
 
 Name
-Null или просто "ничего"
+Null или намеренное отсутствие какого-либо значения
 
 Description
-Null - специальное значение, которое имеет смысл «ничего» или «значение неизвестно».
-Создайте переменную с именем `zero` и присвойте ей специальное значение null.
+Null - специальное значение, которое имеет смысл `значение намеренно отсутствует`.
+Создайте переменную с именем `futureProfit` и присвойте ей специальное значение null.
 
 Приведем пример, который принципиально похож на то что нужно сделать,
 но адаптируйте его к требованиям задачи:
 ```
-const age = null;
+const nextWinner = null;
 ```
 */
 
 // Solution
-const zero = null;
+const futureProfit = null;
 
 // Tests
 
-it('переменная `zero` существует и имеет значение', () => {
-    expect(zero).not.undefined;
+it('переменная `futureProfit` существует и имеет значение', () => {
+    expect(futureProfit).not.undefined;
 });
 
-it('переменная `zero` имеет тип object', () => {
-    expect(typeof zero).eq('object');
-});
-
-it('значение переменной `zero` равно null', () => {
-    expect(zero).equal(null);
+it('значение переменной `futureProfit` равно null', () => {
+    expect(futureProfit).equal(null);
 });

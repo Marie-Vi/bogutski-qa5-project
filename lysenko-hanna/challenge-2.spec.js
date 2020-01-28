@@ -65,7 +65,7 @@ describe('Переменная `number`', () => {
     });
 
     it('переменная `number` является целым числом', () => {
-        expect(Number.isInteger(number));
+        expect(Number.isInteger(number)).true;
     });
 });
 

@@ -12,9 +12,9 @@ const { expect } = require('chai');
 // Сколько книг находится на 5-ой полке в библиотеке?
 // Используйте при решении задачи возведение в степень.
 
-// Создайте переменную `number` и присвойте ей значение 3.
+// Создайте переменную `bookQuantity` и присвойте ей значение 3.
 // Создайте переменную `shelf` и присвойте ей значение 5.
-// Создайте переменную `result` и присвойте ей значение `number` в степени `shelf`.
+// Создайте переменную `result` и присвойте ей значение `bookQuantity` в степени `shelf`.
 
 
 // Синтаксис возведения в степень – две звездочки подряд (**).
@@ -27,29 +27,29 @@ const { expect } = require('chai');
 // но адаптируйте его к требованиям задачи:
 
 // ```
-// const number1 = 10;
-// const number2 = 3;
-// const result = number1 ** number2 ;
+// const quantity = 10;
+// const stepen = 3;
+// const result = quantity ** stepen;
 // ```;
 
 // Solution
-const number = 3;
+const bookQuantity = 3;
 const shelf = 5;
-const result = number ** shelf;
+const result = bookQuantity ** shelf;
 
 
 // Tests
 
-it('Переменная `number` содержит значение', () => {
-    expect(number).not.undefined;
+it('Переменная `bookQuantity` содержит значение', () => {
+    expect(bookQuantity).not.undefined;
 });
 
-it('Переменная `number` содержит число', () => {
-    expect(number).a('number');
+it('Переменная `bookQuantity` содержит число', () => {
+    expect(bookQuantity).a('number');
 });
 
-it('Переменная `number` равна 3', () => {
-    expect(number).eq(3);
+it('Переменная `bookQuantity` равна 3', () => {
+    expect(bookQuantity).eq(3);
 });
 
 it('Переменная `shelf` содержит значение', () => {

@@ -34,8 +34,8 @@ const { expect } = require('chai');
 
 // Solution
 const bookQuantity = 3;
-const shelf = 5;
-const result = bookQuantity ** shelf;
+const shelves = 5;
+const result = bookQuantity ** shelves;
 
 
 // Tests
@@ -52,16 +52,16 @@ it('Переменная `bookQuantity` равна 3', () => {
     expect(bookQuantity).eq(3);
 });
 
-it('Переменная `shelf` содержит значение', () => {
-    expect(shelf).not.undefined;
+it('Переменная `shelves` содержит значение', () => {
+    expect(shelves).not.undefined;
 });
 
-it('Переменная `shelf` содержит число', () => {
-    expect(shelf).a('number');
+it('Переменная `shelves` содержит число', () => {
+    expect(shelves).a('number');
 });
 
-it('Переменная `shelf` равна 5', () => {
-    expect(shelf).eq(5);
+it('Переменная `shelves` равна 5', () => {
+    expect(shelves).eq(5);
 });
 
 it('Переменная `result` содержит значение', () => {
